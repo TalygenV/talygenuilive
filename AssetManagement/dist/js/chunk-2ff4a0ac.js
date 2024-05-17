@@ -1,2 +1,1097 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2ff4a0ac"],{4555:function(t,a,e){"use strict";var s=function(){var t=this,a=t._self._c;return t.TotalPages>0?a("div",{staticClass:"nu-paging"},[a("nav",{attrs:{"aria-label":"Page navigation example col-sm-12 col-md-12 col-lg-12 col-xl-12 float-left"}},[a("ul",{staticClass:"pagination row"},[a("li",{staticClass:"col-sm-12 col-md-6 col-lg-6 col-xl-6 float-left choose-page"},[a("span",{staticClass:"mr-2"},[t._v("Show")]),a("span",{staticClass:"select"},[a("select",{directives:[{name:"model",rawName:"v-model",value:t.PageSize,expression:"PageSize"}],staticClass:"form-control form-control-sm",attrs:{id:"pageSize",name:"pageSize"},on:{change:[function(a){var e=Array.prototype.filter.call(a.target.options,(function(t){return t.selected})).map((function(t){var a="_value"in t?t._value:t.value;return a}));t.PageSize=a.target.multiple?e:e[0]},t.SetPageSize]}},t._l(t.PageSizeOption,(function(e,s){return a("option",{key:s,domProps:{value:e}},[t._v(t._s(e)+" ")])})),0)]),a("span",{staticClass:"ml-2"},[t._v(t._s(t.$t("PagingText",[(t.CurrentPage-1)*t.PageSize+1,t.PageSize*t.CurrentPage>t.TotalRecords?t.TotalRecords:t.PageSize*t.CurrentPage,t.TotalRecords])))])]),a("li",{staticClass:"col-sm-12 col-md-6 col-lg-6 col-xl-6 float-left"},[t.TotalPages>1?a("ul",{staticClass:"paging-count"},[a("li",{staticClass:"page-item"},[1!=t.CurrentPage?a("a",{staticClass:"page-link first",attrs:{title:t.firstText,href:"javascript:;",val:"1"},on:{click:function(a){return t.SetCurrentPage(1)}}},[t._v(t._s(t.firstText))]):t._e(),1==t.CurrentPage?a("a",{staticClass:"page-link first disabled",attrs:{title:t.firstText,val:"1"}},[t._v(t._s(t.firstText))]):t._e()]),a("li",{staticClass:"page-item"},[1!=t.CurrentPage?a("a",{staticClass:"page-link previous",attrs:{title:t.prevText,href:"javascript:;"},on:{click:function(a){return t.SetCurrentPage(t.CurrentPage-1)}}},[t._v(t._s(t.prevText))]):t._e(),1==t.CurrentPage?a("a",{staticClass:"page-link previous disabled",attrs:{title:t.prevText}},[t._v(t._s(t.prevText))]):t._e()]),t._l(t.TotalPages,(function(e,s){return[e>=t.GroupStart&&e<=t.GroupEnd?a("li",{key:s,staticClass:"page-item"},[s+1==t.CurrentPage?a("a",{staticClass:"page-link active",attrs:{href:"javascript:;"}},[t._v(t._s(s+1))]):t._e(),s+1!=t.CurrentPage?a("a",{staticClass:"page-link",attrs:{href:"javascript:;",val:s},on:{click:function(a){return t.SetCurrentPage(s+1)}}},[t._v(t._s(s+1))]):t._e()]):t._e()]})),a("li",{staticClass:"page-item"},[t.CurrentPage<t.TotalPages?a("a",{staticClass:"page-link next",attrs:{title:t.nextText,href:"javascript:;"},on:{click:function(a){return t.SetCurrentPage(t.CurrentPage+1)}}},[t._v(t._s(t.nextText))]):t._e(),t.CurrentPage>=t.TotalPages?a("a",{staticClass:"page-link disabled next",attrs:{title:t.nextText}},[t._v(t._s(t.nextText))]):t._e()]),a("li",{staticClass:"page-item"},[t.CurrentPage!=t.TotalPages?a("a",{staticClass:"page-link next",attrs:{title:t.lastText,href:"javascript:;",val:t.TotalPages},on:{click:function(a){return t.SetCurrentPage(t.TotalPages)}}},[t._v(t._s(t.lastText))]):t._e(),t.CurrentPage==t.TotalPages?a("a",{staticClass:"page-link next disabled",attrs:{title:t.lastText,val:t.TotalPages}},[t._v(t._s(t.lastText))]):t._e()])],2):t._e()])])])]):t._e()},i=[],r=(e("14d9"),{props:{numberofrecords:{type:Number,required:!0},prevText:{type:String,required:!0},nextText:{type:String,required:!0},firstText:{type:String,required:!0},lastText:{type:String,required:!0},callbackfunction:{type:Function},CurrentPageNumber:{type:Number}},data:function(){return{TotalRecords:0,PageNumber:1,PageSize:10,PageSizeOption:null,CurrentPage:1,TotalPages:10,GroupStart:1,GroupEnd:3,LastPage:!1}},watch:{numberofrecords:function(t){this.CurrentPage>this.PageNumber&&(this.CurrentPage=this.PageNumber),this.TotalRecords=t,this.TotalPages=Math.ceil(this.TotalRecords/this.PageSize),this.TotalPages==this.PageNumber&&this.PageNumber>3?(this.GroupStart=this.PageNumber-2,this.GroupEnd=this.PageNumber):this.TotalPages>this.PageNumber&&this.PageNumber>=3?(this.GroupStart=this.PageNumber-1,this.GroupEnd=this.PageNumber+1):(this.GroupStart=1,this.GroupEnd=3)},CurrentPageNumber:function(t){var a=this;a.CurrentPage=t,1==t&&a.SetCurrentPage(t)}},created:function(){this.TotalRecords=this.numberofrecords,this.TotalPages=Math.ceil(this.TotalRecords/this.PageSize),this.GetPageSizeOption()},methods:{GetData:function(){this.$emit("SetCurrentPage",{PageNumber:this.PageNumber,PageSize:this.PageSize}),"undefined"!=typeof this.callbackfunction&&null!=this.callbackfunction&&this.callbackfunction()},SetPageSize:function(t){this.PageSize=t.target.value,this.PageNumber=1,this.CurrentPage=this.PageNumber,this.GroupStart=this.PageNumber,this.GroupEnd=this.PageNumber+2,this.TotalPages=Math.ceil(this.TotalRecords/this.PageSize),this.GetData()},SetCurrentPage:function(t){this.PageNumber=t,this.CurrentPage=t,this.TotalPages==this.PageNumber&&this.PageNumber>3?(this.GroupStart=this.PageNumber-2,this.GroupEnd=this.PageNumber):this.TotalPages>this.PageNumber&&this.PageNumber>=3?(this.GroupStart=this.PageNumber-1,this.GroupEnd=this.PageNumber+1):(this.GroupStart=1,this.GroupEnd=3),this.GetData()},GetPageSizeOption:function(){for(var t=[],a=10,e=a;e<a+95;e+=5)t.push(e);this.PageSizeOption=t}}}),n=r,o=e("2877"),l=Object(o["a"])(n,s,i,!1,null,null,null);a["a"]=l.exports},df17:function(t,a,e){"use strict";var s=function(){var t=this,a=t._self._c;return a("div",{staticClass:"cstm-drop-btn"},[t.isShowLoader?a("button",{staticClass:"btn btn-dark w-100",staticStyle:{padding:"2px 10px 2px 2px"},attrs:{type:"button",disabled:""}},[a("span",{staticClass:"spinner-border spinner-border-sm",attrs:{role:"status","aria-hidden":"true"}}),t._v(" Loading...")]):t._e(),t.isShowLoader?t._e():a("select",{directives:[{name:"model",rawName:"v-model",value:t.StatusId,expression:"StatusId"}],staticClass:"w-100",class:{ddlchangestatus:t.IsReponsive},style:{backgroundColor:t.StatusBgColor,color:t.StatusColor},attrs:{id:"crmlistingStatus_span",disabled:t.StatusCode==t.StatusId,oldstatus:t.PrevStatus,checkPrivilege:"yes","data-id":t.IsReponsive?t.dataid:null,"data-status":t.IsReponsive?t.StatusId:null},on:{change:[function(a){var e=Array.prototype.filter.call(a.target.options,(function(t){return t.selected})).map((function(t){var a="_value"in t?t._value:t.value;return a}));t.StatusId=a.target.multiple?e:e[0]},function(a){return t.ChangeStatus(t.dataid,a)}]}},t._l(t.StatusList,(function(e,s){return a("option",{key:s,domProps:{value:e.STATUS_ID}},[t._v(" "+t._s(e.STATUS)+" ")])})),0)])},i=[],r=(e("14d9"),e("1115")),n={name:"listing-status",props:{dataid:{type:Number,required:!0},dataselected:{type:String,required:!0},dataController:{type:String,required:!0},dataAction:{type:String,required:!0},isfor:{type:String,required:!0},callbackfunction:{type:Function},statuslist:{type:Array,required:!0},isselectedvaluestring:{type:Boolean},parentid:{type:Number},haschild:{type:Boolean},hasglobal:{type:Boolean,required:!1}},data:function(){return{StatusId:this.dataselected,StatusCode:"",PrevStatus:this.dataselected,IsReponsive:!1,StatusList:this.statuslist,item:this.item,StatusColor:"#ffffff",StatusBgColor:"#525f65",isShowLoader:!0}},created:function(){var t=this;1!=t.hasglobal&&"true"!=t.hasglobal||(t.StatusList=this.GetStatusList()),$.each(t.statuslist,(function(a,e){"Closed"==t.statuslist[a].STATUS&&(t.StatusCode=t.statuslist[a].STATUS_ID)}));try{this.isShowLoader=!(this.statuslist.length>0)}catch(s){this.isShowLoader=!1}var a=this;if(1==this.isselectedvaluestring){var e=this.StatusList.filter((function(t){return t.STATUS==a.dataselected}));e.length>0?(this.StatusId=e[0].STATUS_ID,this.PrevStatus=e[0].STATUS_ID,this.GetColor()):(this.StatusId="",this.PrevStatus="")}else this.StatusId=this.dataselected,this.PrevStatus=this.dataselected,this.GetColor();this.GetColor()},mounted:function(){var t=this;$("body").on("change",".ddlchangestatus",(function(a){a.stopImmediatePropagation(),t.ChangeStatus($(this).attr("data-id"),a,a.target.value)}))},watch:{dataselected:function(t){if(1==this.isselectedvaluestring){var a=this.StatusList.filter((function(a){return a.STATUS==t}));a.length>0?(this.StatusId=a[0].STATUS_ID,this.PrevStatus=a[0].STATUS_ID,this.GetColor()):(this.StatusId="",this.PrevStatus="")}else this.StatusId=t,this.PrevStatus=t,this.GetColor();this.GetColor()},statuslist:function(t){this.isShowLoader=!1,this.StatusList=t;var a=this;if(1==a.isselectedvaluestring){var e=a.StatusList.filter((function(t){return t.STATUS==a.dataselected}));e.length>0?(a.StatusId=e[0].STATUS_ID,a.PrevStatus=e[0].STATUS_ID,a.GetColor()):(a.StatusId="",a.PrevStatus="",this.GetColor())}else this.StatusId=t,a.PrevStatus=t,this.GetColor()}},methods:{GetColor:function(){var t=this;if(null!=t.StatusList&&t.StatusList.length>0){var a=$.grep(t.StatusList,(function(a,e){return a.STATUS_ID==t.StatusId}));null!=a&&a.length>0&&(t.StatusColor=a[0].STATUS_COLOR,t.StatusBgColor=a[0].STATUS_BG_COLOR,null==t.StatusColor||""==t.StatusColor?(t.StatusColor="#ffffff",t.StatusBgColor="#525f65"):t.StatusId=a[0].STATUS_ID)}},GetStatusList:function(){var t=[],a={STATUS_ID:1001,STATUS:Globalize.localize("Active"),STATUS_COLOR:"#ffffff",STATUS_BG_COLOR:"#28a745"};return t.push(a),a={STATUS_ID:1002,STATUS:Globalize.localize("Inactive"),STATUS_COLOR:"#ffffff",STATUS_BG_COLOR:"#d72435"},t.push(a),t},ChangeStatus:function(t,a,e){var s=a.target.selectedOptions[0].text,i=this;"Closed"==s&&i.dataController+"/"+i.isfor=="Crm/CRM_LEADS"?i.dataController:(i.dataController,i.dataAction),i.PrevStatus!=$(a.target).attr("oldstatus")&&(i.PrevStatus=$(a.target).attr("oldstatus"));var n=this.$t("ConfirmUpdateStatusRecord"),o=i.isfor;"TASKLISTING"==i.isfor&&(n=i.$t("ConfirmUpdateTaskStatus"),n=1==i.haschild?this.$t("ConfirmUpdateTaskStatus"):0==i.haschild&&Number(i.parentid)>0?this.$t("ConfirmUpdateChildTaskStatus"):this.$t("ConfirmUpdateStatusRecord"));var l=!1,u=0;$.each(i.statuslist,(function(t,a){"REFPEN"==a.STATUS_CODE?u=a.STATUS_ID:"PNPGRS"==a.STATUS_CODE&&(InprogressStatusId=a.STATUS_ID)})),(Number(i.parentid)>0&&"1002"==i.PrevStatus&&"1001"==i.StatusId||Number(i.parentid)>0&&"1002"!=i.PrevStatus&&1001==i.StatusId||Number(i.parentid)>0&&i.StatusId==Number(u)||Number(i.parentid)>0&&i.StatusId==Number(InprogressStatusId))&&(l=!0),l&&(o="TASKCHILDLISTING"),"TASKLISTING"==i.isfor&&(n=l?this.$t("ConfirmUpdateChildTaskStatus"):this.$t("ConfirmUpdateTaskStatus")),i.confirmR(n,!0,this.$t("UpdateCommonStatus"),(function(a){e&&(i.StatusId=e);var s={ID:t,StatusId:i.StatusId,IsFor:o},n=JSON.stringify(s);r["a"].CommonUpdateStatus(n).then((function(t){null!=t.data&&"Success"===t.data.status?(i.ShowAlert(i.$t("RecordUpdatedSuccessfully"),"success",i.$t("Alert")),i.PrevStatus=i.StatusId,"undefined"!=typeof i.callbackfunction&&null!=i.callbackfunction&&i.callbackfunction()):i.ShowAlert(i.$t("UnknownErrorOccur"),"failure",!0,i.$t("Alert"))}),(function(t){}))}),(function(t){i.StatusId=i.PrevStatus}))}}},o=n,l=e("2877"),u=Object(l["a"])(o,s,i,!1,null,null,null);a["a"]=u.exports},f599:function(t,a,e){"use strict";e.r(a);var s=function(){var t=this,a=t._self._c;return a("section",{staticClass:"main-content no-left-bar",attrs:{id:"divMainAssetGroupListingData"}},[a("loader",{attrs:{"is-visible":t.isLoading}}),a("div",{staticClass:"right-content"},[a("div",{staticClass:"col-md-12 p-0"},[a("div",{staticClass:"theme-primary partition tablehead p-actions-expand"},[a("span",{staticClass:"p-name text-white"},[t._v(t._s(t.$t("ProductsScanSummary")))]),a("span",{staticClass:"p-actions float-right"},[t._m(0),a("a",{staticClass:"p-action-btn text-white",attrs:{title:"Page Tour"},on:{click:function(a){return t.setTourGuideSteps(0)}}},[a("em",{staticClass:"fa fa fa-road"}),t._v(" "),a("br"),a("span",[t._v("Page Tour")])])]),t._m(1)])]),a("div",{staticClass:"col-sm-12 col-md-12 col-lg-12 col-xl-12 searchpanel tablehead search float-left p-0"},[a("div",{staticClass:"col-sm-12 col-md-12 col-lg-12 col-xl-12 Search-panel float-left pt-2 p-0"},[a("div",{staticClass:"col-sm-12 col-md-12 col-lg-6 col-xl-6 float-left"},[a("div",{staticClass:"row mt-0"},[a("div",{staticClass:"col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 float-left pr-1 pl-0"},[a("div",{staticClass:"form-group"},[a("input",{directives:[{name:"model",rawName:"v-model",value:t.Scan_Items,expression:"Scan_Items"}],staticClass:"form-control",attrs:{type:"text",placeholder:"Search by Group Name",autocomplete:"off",name:"search"},domProps:{value:t.Scan_Items},on:{input:function(a){a.target.composing||(t.Scan_Items=a.target.value)}}})])]),a("div",{staticClass:"col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 float-left pl-0"},[a("div",{staticClass:"search-btm-btn background-0 text-left form-check-inline m-0"},[a("a",{staticClass:"btn btn-success mr-1 px-4",attrs:{href:"javascript:;",title:"Search"},on:{click:t.SearchData}},[a("em",{staticClass:"fa fa-search text-white"})]),a("a",{staticClass:"btn btn-danger clearsearchtext px-4",attrs:{title:"Clear",href:"javascript:;"},on:{click:t.ResetData}},[a("em",{staticClass:"fa fa-refresh"})])])])])])])]),a("div",{staticClass:"listing mt-2"},[a("div",{staticClass:"table-responsive"},[a("table",{staticClass:"table table-bordered mt-0",attrs:{id:"itmgrplisting"}},[a("thead",{staticClass:"thead-bg"},[a("tr",[a("th",[a("span",{staticClass:"sort",attrs:{href:"javascript:;",id:"Group_name"},on:{click:function(a){return t.sortdata("NAME")}}},[t._v("Group Name")])]),t._m(2),t._m(3),t._m(4),t._m(5),t._m(6)])]),a("tbody",[t._l(t.GroupData,(function(e,s){return a("tr",{key:s},[a("td",[a("span",{staticClass:"text-overflow-dynamic-container"},[t._v(t._s(e.Group_name))])]),a("td",{staticClass:"text-center single-action"},[a("span",{staticClass:"text-dark"},[a("i",{staticClass:"fa fa-list",attrs:{"aria-hidden":"true"}}),a("RouterLink",{attrs:{to:"/Asset/ScannedItems"}},[a("span",{staticClass:"noti-circle noti-blue"},[t._v(t._s(e.Total_Items)+" ")])])],1)]),a("td",{staticClass:"text-center single-action"},[a("span",{staticClass:"text-dark"},[a("i",{staticClass:"fa fa-list",attrs:{"aria-hidden":"true"}}),a("RouterLink",{attrs:{to:"/Asset/RFIDMyDeviceList"}},[a("span",{staticClass:"noti-circle noti-green"},[t._v(t._s(e.Scanned_Items))])])],1)]),a("td",{staticClass:"text-center single-action"},[a("span",{staticClass:"text-dark"},[a("i",{staticClass:"fa fa-list",attrs:{"aria-hidden":"true"}}),a("RouterLink",{attrs:{to:"/Asset/MissingItems"}},[a("span",{staticClass:"noti-circle noti-orange"},[t._v(t._s(e.Missing_Items))])])],1)]),a("td",[a("span",{staticClass:"text-overflow-dynamic-container"},[t._v(t._s(t.$options.filters.formatDateTime(e.ScanTime)))])]),a("td",[a("span",{staticClass:"text-overflow-dynamic-container"},[t._v(t._s(e.Notification_Status))])])])})),t.noRecord?a("tr",[a("td",{staticClass:"text-center text-danger no-record",attrs:{colspan:"8"}},[t._v(t._s(t.$t("NoRecordfound")))])]):t._e()],2)])]),a("Pager",{attrs:{numberofrecords:t.TotalRecords,CurrentPageNumber:t.CurrentPage,"prev-text":"Prev","first-text":"First","last-text":"Last","next-text":"Next"},on:{SetCurrentPage:t.pagerMethod}})],1)])],1)},i=[function(){var t=this,a=t._self._c;return a("a",{staticClass:"p-action-btn text-white d-none",attrs:{id:"ancChangeView","data-isshow":"0"}},[a("i",{staticClass:"fa fa-pencil",attrs:{"aria-hidden":"true"}}),a("br"),t._v("Change View")])},function(){var t=this,a=t._self._c;return a("span",{staticClass:"collapse-head-btns"},[a("a",{staticClass:"collapse-btns",attrs:{href:"javascript:;"}},[a("i",{staticClass:"fa fa-angle-up text-white"})])])},function(){var t=this,a=t._self._c;return a("th",[a("span",{attrs:{href:"javascript:;",id:"Total_Items"}},[t._v("Total Items ")])])},function(){var t=this,a=t._self._c;return a("th",[a("span",{attrs:{href:"javascript:;",id:"Scanned_Items"}},[t._v("Scanned Items")])])},function(){var t=this,a=t._self._c;return a("th",[a("span",[t._v(" Missing Items ")])])},function(){var t=this,a=t._self._c;return a("th",[a("span",{attrs:{id:"ScanTime"}},[t._v(" Scan Time")])])},function(){var t=this,a=t._self._c;return a("th",[a("span",{attrs:{id:"Notification_Status"}},[t._v(" Notification Status")])])}],r=e("1115"),n=e("4555"),o=e("df17"),l={components:{Pager:n["a"],StatusList:o["a"]},data(){return{txtsearch:null,Case:0,ListType:!0,Scan_Items:"",sortBy:"",sortExp:"",Name:"",GroupData:[],noRecord:!1,TotalRecords:0,pageNum:1,PageSize:10,CurrentPage:1,TotalPages:0,isLoading:!1}},created:function(){this.GetItemsScanSummary()},methods:{GetItemsScanSummary:function(){var t=this,a=`search=${this.Scan_Items}&pageSize=${t.PageSize}&pageNum=${t.pageNum}&sortBy=${this.sortBy}&sortExp=${this.sortExp}`;r["a"].GetRFIDGroupItemList(a).then(a=>{null!=a.data?a.data.length>0?(t.GroupData=a.data,t.TotalRecords=a.data[0].Total_Items,t.TotalPages=Math.ceil(t.TotalRecords/t.PageSize),t.CurrentPage=t.pageNum,t.noRecord=!1,t.isLoading=!1):(t.GroupData=[],t.noRecord=!0,t.TotalRecords=0):(t.noRecord=!0,t.GroupData=[],t.TotalRecords=0,t.isLoading=!1),setTimeout((function(){t.CheckBoxBootstrap()}),100)})},SearchData:function(){this.pageNum=1,this.GetItemsScanSummary()},ResetData:function(){this.Scan_Items="",this.GetItemsScanSummary()},pagerMethod:function(t){this.PageSize=t.PageSize,this.pageNum=t.PageNumber,this.GetItemsScanSummary()},sortdata:function(t){this.sortBy=t,this.sortExp="DESC"==this.sortExp?"ASC":"DESC",this.GetItemsScanSummary()}}},u=l,c=e("2877"),d=Object(c["a"])(u,s,i,!1,null,null,null);a["default"]=d.exports}}]);
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["chunk-2ff4a0ac"],{
+
+/***/ "4555":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"40274a44-vue-loader-template"}!./node_modules/cache-loader/dist/cjs.js??ref--13-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Common/Pager.vue?vue&type=template&id=39f52799&
+var render = function render() {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _vm.TotalPages > 0 ? _c('div', {
+    staticClass: "nu-paging"
+  }, [_c('nav', {
+    attrs: {
+      "aria-label": "Page navigation example col-sm-12 col-md-12 col-lg-12 col-xl-12 float-left"
+    }
+  }, [_c('ul', {
+    staticClass: "pagination row"
+  }, [_c('li', {
+    staticClass: "col-sm-12 col-md-6 col-lg-6 col-xl-6 float-left choose-page"
+  }, [_c('span', {
+    staticClass: "mr-2"
+  }, [_vm._v("Show")]), _c('span', {
+    staticClass: "select"
+  }, [_c('select', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.PageSize,
+      expression: "PageSize"
+    }],
+    staticClass: "form-control form-control-sm",
+    attrs: {
+      "id": "pageSize",
+      "name": "pageSize"
+    },
+    on: {
+      "change": [function ($event) {
+        var $$selectedVal = Array.prototype.filter.call($event.target.options, function (o) {
+          return o.selected;
+        }).map(function (o) {
+          var val = "_value" in o ? o._value : o.value;
+          return val;
+        });
+        _vm.PageSize = $event.target.multiple ? $$selectedVal : $$selectedVal[0];
+      }, _vm.SetPageSize]
+    }
+  }, _vm._l(_vm.PageSizeOption, function (item, itemIndex) {
+    return _c('option', {
+      key: itemIndex,
+      domProps: {
+        "value": item
+      }
+    }, [_vm._v(_vm._s(item) + " ")]);
+  }), 0)]), _c('span', {
+    staticClass: "ml-2"
+  }, [_vm._v(_vm._s(_vm.$t('PagingText', [(_vm.CurrentPage - 1) * _vm.PageSize + 1, _vm.PageSize * _vm.CurrentPage > _vm.TotalRecords ? _vm.TotalRecords : _vm.PageSize * _vm.CurrentPage, _vm.TotalRecords])))])]), _c('li', {
+    staticClass: "col-sm-12 col-md-6 col-lg-6 col-xl-6 float-left"
+  }, [_vm.TotalPages > 1 ? _c('ul', {
+    staticClass: "paging-count"
+  }, [_c('li', {
+    staticClass: "page-item"
+  }, [_vm.CurrentPage != 1 ? _c('a', {
+    staticClass: "page-link first",
+    attrs: {
+      "title": _vm.firstText,
+      "href": "javascript:;",
+      "val": "1"
+    },
+    on: {
+      "click": function ($event) {
+        return _vm.SetCurrentPage(1);
+      }
+    }
+  }, [_vm._v(_vm._s(_vm.firstText))]) : _vm._e(), _vm.CurrentPage == 1 ? _c('a', {
+    staticClass: "page-link first disabled",
+    attrs: {
+      "title": _vm.firstText,
+      "val": "1"
+    }
+  }, [_vm._v(_vm._s(_vm.firstText))]) : _vm._e()]), _c('li', {
+    staticClass: "page-item"
+  }, [_vm.CurrentPage != 1 ? _c('a', {
+    staticClass: "page-link previous",
+    attrs: {
+      "title": _vm.prevText,
+      "href": "javascript:;"
+    },
+    on: {
+      "click": function ($event) {
+        return _vm.SetCurrentPage(_vm.CurrentPage - 1);
+      }
+    }
+  }, [_vm._v(_vm._s(_vm.prevText))]) : _vm._e(), _vm.CurrentPage == 1 ? _c('a', {
+    staticClass: "page-link previous disabled",
+    attrs: {
+      "title": _vm.prevText
+    }
+  }, [_vm._v(_vm._s(_vm.prevText))]) : _vm._e()]), _vm._l(_vm.TotalPages, function (data, index) {
+    return [data >= _vm.GroupStart && data <= _vm.GroupEnd ? _c('li', {
+      key: index,
+      staticClass: "page-item"
+    }, [index + 1 == _vm.CurrentPage ? _c('a', {
+      staticClass: "page-link active",
+      attrs: {
+        "href": "javascript:;"
+      }
+    }, [_vm._v(_vm._s(index + 1))]) : _vm._e(), index + 1 != _vm.CurrentPage ? _c('a', {
+      staticClass: "page-link",
+      attrs: {
+        "href": "javascript:;",
+        "val": index
+      },
+      on: {
+        "click": function ($event) {
+          return _vm.SetCurrentPage(index + 1);
+        }
+      }
+    }, [_vm._v(_vm._s(index + 1))]) : _vm._e()]) : _vm._e()];
+  }), _c('li', {
+    staticClass: "page-item"
+  }, [_vm.CurrentPage < _vm.TotalPages ? _c('a', {
+    staticClass: "page-link next",
+    attrs: {
+      "title": _vm.nextText,
+      "href": "javascript:;"
+    },
+    on: {
+      "click": function ($event) {
+        return _vm.SetCurrentPage(_vm.CurrentPage + 1);
+      }
+    }
+  }, [_vm._v(_vm._s(_vm.nextText))]) : _vm._e(), _vm.CurrentPage >= _vm.TotalPages ? _c('a', {
+    staticClass: "page-link disabled next",
+    attrs: {
+      "title": _vm.nextText
+    }
+  }, [_vm._v(_vm._s(_vm.nextText))]) : _vm._e()]), _c('li', {
+    staticClass: "page-item"
+  }, [_vm.CurrentPage != _vm.TotalPages ? _c('a', {
+    staticClass: "page-link next",
+    attrs: {
+      "title": _vm.lastText,
+      "href": "javascript:;",
+      "val": _vm.TotalPages
+    },
+    on: {
+      "click": function ($event) {
+        return _vm.SetCurrentPage(_vm.TotalPages);
+      }
+    }
+  }, [_vm._v(_vm._s(_vm.lastText))]) : _vm._e(), _vm.CurrentPage == _vm.TotalPages ? _c('a', {
+    staticClass: "page-link next disabled",
+    attrs: {
+      "title": _vm.lastText,
+      "val": _vm.TotalPages
+    }
+  }, [_vm._v(_vm._s(_vm.lastText))]) : _vm._e()])], 2) : _vm._e()])])])]) : _vm._e();
+};
+var staticRenderFns = [];
+
+// CONCATENATED MODULE: ./src/components/Common/Pager.vue?vue&type=template&id=39f52799&
+
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.push.js
+var es_array_push = __webpack_require__("14d9");
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--13-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Common/Pager.vue?vue&type=script&lang=js&
+
+/* harmony default export */ var Pagervue_type_script_lang_js_ = ({
+  props: {
+    numberofrecords: {
+      type: Number,
+      required: true
+    },
+    prevText: {
+      type: String,
+      required: true
+    },
+    nextText: {
+      type: String,
+      required: true
+    },
+    firstText: {
+      type: String,
+      required: true
+    },
+    lastText: {
+      type: String,
+      required: true
+    },
+    callbackfunction: {
+      type: Function
+    },
+    CurrentPageNumber: {
+      type: Number
+    }
+  },
+  data: function () {
+    return {
+      TotalRecords: 0,
+      PageNumber: 1,
+      PageSize: 10,
+      PageSizeOption: null,
+      CurrentPage: 1,
+      TotalPages: 10,
+      GroupStart: 1,
+      GroupEnd: 3,
+      LastPage: false
+    };
+  },
+  watch: {
+    numberofrecords: function (value) {
+      if (this.CurrentPage > this.PageNumber) {
+        this.CurrentPage = this.PageNumber;
+      }
+      this.TotalRecords = value;
+      this.TotalPages = Math.ceil(this.TotalRecords / this.PageSize);
+      if (this.TotalPages == this.PageNumber && this.PageNumber > 3) {
+        this.GroupStart = this.PageNumber - 2;
+        this.GroupEnd = this.PageNumber;
+      } else if (this.TotalPages > this.PageNumber && this.PageNumber >= 3) {
+        this.GroupStart = this.PageNumber - 1;
+        this.GroupEnd = this.PageNumber + 1;
+      } else {
+        this.GroupStart = 1;
+        this.GroupEnd = 3;
+      }
+    },
+    CurrentPageNumber: function (value) {
+      var vm = this;
+      vm.CurrentPage = value;
+      if (value == 1) {
+        vm.SetCurrentPage(value);
+      }
+    }
+  },
+  created: function () {
+    this.TotalRecords = this.numberofrecords;
+    this.TotalPages = Math.ceil(this.TotalRecords / this.PageSize);
+    this.GetPageSizeOption();
+  },
+  methods: {
+    GetData: function () {
+      this.$emit('SetCurrentPage', {
+        'PageNumber': this.PageNumber,
+        "PageSize": this.PageSize
+      });
+      if (typeof this.callbackfunction != 'undefined' && this.callbackfunction != null) {
+        this.callbackfunction();
+      }
+    },
+    SetPageSize: function (event) {
+      this.PageSize = event.target.value;
+      this.PageNumber = 1;
+      this.CurrentPage = this.PageNumber;
+      this.GroupStart = this.PageNumber;
+      this.GroupEnd = this.PageNumber + 2;
+      this.TotalPages = Math.ceil(this.TotalRecords / this.PageSize);
+      this.GetData();
+    },
+    SetCurrentPage: function (pageNumber) {
+      this.PageNumber = pageNumber;
+      this.CurrentPage = pageNumber;
+      if (this.TotalPages == this.PageNumber && this.PageNumber > 3) {
+        this.GroupStart = this.PageNumber - 2;
+        this.GroupEnd = this.PageNumber;
+      } else if (this.TotalPages > this.PageNumber && this.PageNumber >= 3) {
+        this.GroupStart = this.PageNumber - 1;
+        this.GroupEnd = this.PageNumber + 1;
+      } else {
+        this.GroupStart = 1;
+        this.GroupEnd = 3;
+      }
+      this.GetData();
+    },
+    GetPageSizeOption: function () {
+      var list = [];
+      var defaultPageSize = 10;
+      for (var i = defaultPageSize; i < defaultPageSize + 95; i += 5) {
+        list.push(i);
+      }
+      this.PageSizeOption = list;
+    }
+  }
+});
+// CONCATENATED MODULE: ./src/components/Common/Pager.vue?vue&type=script&lang=js&
+ /* harmony default export */ var Common_Pagervue_type_script_lang_js_ = (Pagervue_type_script_lang_js_); 
+// EXTERNAL MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
+var componentNormalizer = __webpack_require__("2877");
+
+// CONCATENATED MODULE: ./src/components/Common/Pager.vue
+
+
+
+
+
+/* normalize component */
+
+var component = Object(componentNormalizer["a" /* default */])(
+  Common_Pagervue_type_script_lang_js_,
+  render,
+  staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* harmony default export */ var Pager = __webpack_exports__["a"] = (component.exports);
+
+/***/ }),
+
+/***/ "df17":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"40274a44-vue-loader-template"}!./node_modules/cache-loader/dist/cjs.js??ref--13-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Common/ListingStatus.vue?vue&type=template&id=24bdefb2&
+var render = function render() {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c('div', {
+    staticClass: "cstm-drop-btn"
+  }, [_vm.isShowLoader ? _c('button', {
+    staticClass: "btn btn-dark w-100",
+    staticStyle: {
+      "padding": "2px 10px 2px 2px"
+    },
+    attrs: {
+      "type": "button",
+      "disabled": ""
+    }
+  }, [_c('span', {
+    staticClass: "spinner-border spinner-border-sm",
+    attrs: {
+      "role": "status",
+      "aria-hidden": "true"
+    }
+  }), _vm._v(" Loading...")]) : _vm._e(), !_vm.isShowLoader ? _c('select', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.StatusId,
+      expression: "StatusId"
+    }],
+    staticClass: "w-100",
+    class: {
+      'ddlchangestatus': _vm.IsReponsive
+    },
+    style: {
+      backgroundColor: _vm.StatusBgColor,
+      color: _vm.StatusColor
+    },
+    attrs: {
+      "id": "crmlistingStatus_span",
+      "disabled": _vm.StatusCode == _vm.StatusId,
+      "oldstatus": _vm.PrevStatus,
+      "checkPrivilege": "yes",
+      "data-id": _vm.IsReponsive ? _vm.dataid : null,
+      "data-status": _vm.IsReponsive ? _vm.StatusId : null
+    },
+    on: {
+      "change": [function ($event) {
+        var $$selectedVal = Array.prototype.filter.call($event.target.options, function (o) {
+          return o.selected;
+        }).map(function (o) {
+          var val = "_value" in o ? o._value : o.value;
+          return val;
+        });
+        _vm.StatusId = $event.target.multiple ? $$selectedVal : $$selectedVal[0];
+      }, function ($event) {
+        return _vm.ChangeStatus(_vm.dataid, $event);
+      }]
+    }
+  }, _vm._l(_vm.StatusList, function (s, index) {
+    return _c('option', {
+      key: index,
+      domProps: {
+        "value": s.STATUS_ID
+      }
+    }, [_vm._v(" " + _vm._s(s.STATUS) + " ")]);
+  }), 0) : _vm._e()]);
+};
+var staticRenderFns = [];
+
+// CONCATENATED MODULE: ./src/components/Common/ListingStatus.vue?vue&type=template&id=24bdefb2&
+
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.push.js
+var es_array_push = __webpack_require__("14d9");
+
+// EXTERNAL MODULE: ./src/service/DataService.js + 1 modules
+var DataService = __webpack_require__("1115");
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--13-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Common/ListingStatus.vue?vue&type=script&lang=js&
+
+
+/* harmony default export */ var ListingStatusvue_type_script_lang_js_ = ({
+  name: 'listing-status',
+  props: {
+    dataid: {
+      type: Number,
+      required: true
+    },
+    dataselected: {
+      type: String,
+      required: true
+    },
+    dataController: {
+      type: String,
+      required: true
+    },
+    dataAction: {
+      type: String,
+      required: true
+    },
+    isfor: {
+      type: String,
+      required: true
+    },
+    callbackfunction: {
+      type: Function
+    },
+    statuslist: {
+      type: Array,
+      required: true
+    },
+    isselectedvaluestring: {
+      type: Boolean
+    },
+    parentid: {
+      type: Number
+    },
+    haschild: {
+      type: Boolean
+    },
+    hasglobal: {
+      type: Boolean,
+      required: false
+    }
+  },
+  data: function () {
+    return {
+      StatusId: this.dataselected,
+      StatusCode: "",
+      PrevStatus: this.dataselected,
+      IsReponsive: false,
+      StatusList: this.statuslist,
+      item: this.item,
+      StatusColor: '#ffffff',
+      StatusBgColor: '#525f65',
+      isShowLoader: true
+    };
+  },
+  created: function () {
+    var vueCom = this;
+    if (vueCom.hasglobal == true || vueCom.hasglobal == "true") {
+      vueCom.StatusList = this.GetStatusList();
+    }
+    $.each(vueCom.statuslist, function (filedIndex, fieldItem) {
+      if (vueCom.statuslist[filedIndex].STATUS == "Closed") {
+        vueCom.StatusCode = vueCom.statuslist[filedIndex].STATUS_ID;
+      }
+    });
+    try {
+      this.isShowLoader = !(this.statuslist.length > 0);
+    } catch (ex) {
+      this.isShowLoader = false;
+    }
+    var ths = this;
+    if (this.isselectedvaluestring == true) {
+      var itm = this.StatusList.filter(function (entry) {
+        return entry.STATUS == ths.dataselected;
+      });
+      if (itm.length > 0) {
+        this.StatusId = itm[0].STATUS_ID;
+        this.PrevStatus = itm[0].STATUS_ID;
+        this.GetColor();
+      } else {
+        this.StatusId = "";
+        this.PrevStatus = "";
+      }
+    } else {
+      this.StatusId = this.dataselected;
+      this.PrevStatus = this.dataselected;
+      this.GetColor();
+    }
+    this.GetColor();
+  },
+  mounted: function () {
+    var vm = this;
+    $("body").on("change", ".ddlchangestatus", function (event) {
+      event.stopImmediatePropagation();
+      vm.ChangeStatus($(this).attr("data-id"), event, event.target.value);
+    });
+  },
+  watch: {
+    dataselected: function (value) {
+      if (this.isselectedvaluestring == true) {
+        var itm = this.StatusList.filter(function (entry) {
+          return entry.STATUS == value;
+        });
+        if (itm.length > 0) {
+          this.StatusId = itm[0].STATUS_ID;
+          this.PrevStatus = itm[0].STATUS_ID;
+          this.GetColor();
+        } else {
+          this.StatusId = "";
+          this.PrevStatus = "";
+        }
+      } else {
+        this.StatusId = value;
+        this.PrevStatus = value;
+        this.GetColor();
+      }
+      this.GetColor();
+    },
+    statuslist: function (value) {
+      this.isShowLoader = false;
+      this.StatusList = value;
+      var ths = this;
+      if (ths.isselectedvaluestring == true) {
+        var itm = ths.StatusList.filter(function (entry) {
+          return entry.STATUS == ths.dataselected;
+        });
+        if (itm.length > 0) {
+          ths.StatusId = itm[0].STATUS_ID;
+          ths.PrevStatus = itm[0].STATUS_ID;
+          ths.GetColor();
+        } else {
+          ths.StatusId = "";
+          ths.PrevStatus = "";
+          this.GetColor();
+        }
+      } else {
+        this.StatusId = value;
+        ths.PrevStatus = value;
+        this.GetColor();
+      }
+    }
+  },
+  methods: {
+    GetColor: function () {
+      var vm = this;
+      //vm.$forceUpdate();
+      if (vm.StatusList != null && vm.StatusList.length > 0) {
+        var returnedData = $.grep(vm.StatusList, function (element, index) {
+          return element.STATUS_ID == vm.StatusId;
+        });
+        if (returnedData != null && returnedData.length > 0) {
+          vm.StatusColor = returnedData[0].STATUS_COLOR;
+          vm.StatusBgColor = returnedData[0].STATUS_BG_COLOR;
+          if (vm.StatusColor == null || vm.StatusColor == '') {
+            vm.StatusColor = '#ffffff';
+            vm.StatusBgColor = '#525f65';
+          } else {
+            vm.StatusId = returnedData[0].STATUS_ID;
+          }
+        }
+        //else {
+        //    var itm = vm.StatusList.filter(function (entry) { return entry.STATUS == vm.dataselected; });
+        //    ths.StatusId = itm[0].STATUS_ID;
+        //}
+      }
+    },
+
+    GetStatusList: function () {
+      var list = [];
+      var obj = {
+        STATUS_ID: 1001,
+        STATUS: Globalize.localize("Active"),
+        STATUS_COLOR: '#ffffff',
+        STATUS_BG_COLOR: '#28a745'
+      };
+      list.push(obj);
+      obj = {
+        STATUS_ID: 1002,
+        STATUS: Globalize.localize("Inactive"),
+        STATUS_COLOR: '#ffffff',
+        STATUS_BG_COLOR: '#d72435'
+      };
+      list.push(obj);
+      return list;
+    },
+    ChangeStatus: function (id, event, statusId) {
+      var StatusName = event.target.selectedOptions[0].text;
+      var vm = this;
+      if (true) {
+        var urlval = "";
+        if (StatusName == "Closed" && vm.dataController + '/' + vm.isfor == "Crm/CRM_LEADS") {
+          urlval = '/' + vm.dataController + '/CloseLeads';
+        } else {
+          urlval = '/' + vm.dataController + '/' + vm.dataAction;
+        }
+        if (vm.PrevStatus != $(event.target).attr("oldstatus")) {
+          vm.PrevStatus = $(event.target).attr("oldstatus");
+        }
+        var msg = this.$t("ConfirmUpdateStatusRecord");
+        var isFor = vm.isfor;
+        if (vm.isfor == "TASKLISTING") {
+          msg = vm.$t("ConfirmUpdateTaskStatus");
+          if (vm.haschild == true) {
+            msg = this.$t("ConfirmUpdateTaskStatus");
+          } else if (vm.haschild == false && Number(vm.parentid) > 0) {
+            msg = this.$t("ConfirmUpdateChildTaskStatus");
+          } else {
+            msg = this.$t("ConfirmUpdateStatusRecord");
+          }
+        }
+        var isStatusChange = false;
+        var inprogressStatusId = 0;
+        var pendingStatusId = 0;
+        $.each(vm.statuslist, function (filedIndex, fieldItem) {
+          if (fieldItem.STATUS_CODE == "REFPEN") {
+            pendingStatusId = fieldItem.STATUS_ID;
+          } else if (fieldItem.STATUS_CODE == "PNPGRS") {
+            InprogressStatusId = fieldItem.STATUS_ID;
+          }
+        });
+        if (Number(vm.parentid) > 0 && vm.PrevStatus == "1002" && vm.StatusId == "1001") {
+          isStatusChange = true;
+        } else if (Number(vm.parentid) > 0 && vm.PrevStatus != "1002" && vm.StatusId == 1001) {
+          isStatusChange = true;
+        } else if (Number(vm.parentid) > 0 && vm.StatusId == Number(pendingStatusId)) {
+          isStatusChange = true;
+        } else if (Number(vm.parentid) > 0 && vm.StatusId == Number(InprogressStatusId)) {
+          isStatusChange = true;
+        }
+        if (isStatusChange) {
+          //msg = Globalize.localize("ConfirmUpdateChildTaskStatus");
+          isFor = "TASKCHILDLISTING";
+        }
+        if (vm.isfor == "TASKLISTING") {
+          if (isStatusChange) {
+            msg = this.$t("ConfirmUpdateChildTaskStatus");
+          } else {
+            msg = this.$t("ConfirmUpdateTaskStatus");
+          }
+        }
+        if ( /*GetPrivilege('/Project/UpdateProjectStatus', true, false)*/true) {
+          vm.confirmR(msg, true, this.$t('UpdateCommonStatus'), function (result) {
+            if (statusId) {
+              vm.StatusId = statusId;
+            }
+            var VarObject = {
+              ID: id,
+              StatusId: vm.StatusId,
+              IsFor: isFor
+            };
+            var objectPostString = JSON.stringify(VarObject);
+            DataService["a" /* default */].CommonUpdateStatus(objectPostString).then(function (response) {
+              if (response.data != null) {
+                if (response.data.status === 'Success') {
+                  vm.ShowAlert(vm.$t("RecordUpdatedSuccessfully"), "success", vm.$t('Alert'));
+                  vm.PrevStatus = vm.StatusId;
+                  if (typeof vm.callbackfunction != 'undefined' && vm.callbackfunction != null) {
+                    vm.callbackfunction();
+                  }
+                } else {
+                  vm.ShowAlert(vm.$t("UnknownErrorOccur"), "failure", true, vm.$t('Alert'));
+                }
+              } else {
+                vm.ShowAlert(vm.$t("UnknownErrorOccur"), "failure", true, vm.$t('Alert'));
+              }
+            }, function (response) {});
+          }, function (result) {
+            vm.StatusId = vm.PrevStatus;
+          });
+        } else {}
+        // }
+        // else {
+        //     vm.StatusId = vm.PrevStatus;
+        // }
+      } else {}
+      //}
+    }
+  }
+});
+// CONCATENATED MODULE: ./src/components/Common/ListingStatus.vue?vue&type=script&lang=js&
+ /* harmony default export */ var Common_ListingStatusvue_type_script_lang_js_ = (ListingStatusvue_type_script_lang_js_); 
+// EXTERNAL MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
+var componentNormalizer = __webpack_require__("2877");
+
+// CONCATENATED MODULE: ./src/components/Common/ListingStatus.vue
+
+
+
+
+
+/* normalize component */
+
+var component = Object(componentNormalizer["a" /* default */])(
+  Common_ListingStatusvue_type_script_lang_js_,
+  render,
+  staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* harmony default export */ var ListingStatus = __webpack_exports__["a"] = (component.exports);
+
+/***/ }),
+
+/***/ "f599":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"40274a44-vue-loader-template"}!./node_modules/cache-loader/dist/cjs.js??ref--13-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader/lib??vue-loader-options!./src/views/Asset/ItemsScanSummary.vue?vue&type=template&id=19d9e32d&
+var render = function render() {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c('section', {
+    staticClass: "main-content no-left-bar",
+    attrs: {
+      "id": "divMainAssetGroupListingData"
+    }
+  }, [_c('loader', {
+    attrs: {
+      "is-visible": _vm.isLoading
+    }
+  }), _c('div', {
+    staticClass: "right-content"
+  }, [_c('div', {
+    staticClass: "col-md-12 p-0"
+  }, [_c('div', {
+    staticClass: "theme-primary partition tablehead p-actions-expand"
+  }, [_c('span', {
+    staticClass: "p-name text-white"
+  }, [_vm._v(_vm._s(_vm.$t('ProductsScanSummary')))]), _c('span', {
+    staticClass: "p-actions float-right"
+  }, [_vm._m(0), _c('a', {
+    staticClass: "p-action-btn text-white",
+    attrs: {
+      "title": "Page Tour"
+    },
+    on: {
+      "click": function ($event) {
+        return _vm.setTourGuideSteps(0);
+      }
+    }
+  }, [_c('em', {
+    staticClass: "fa fa fa-road"
+  }), _vm._v(" "), _c('br'), _c('span', [_vm._v("Page Tour")])])]), _vm._m(1)])]), _c('div', {
+    staticClass: "col-sm-12 col-md-12 col-lg-12 col-xl-12 searchpanel tablehead search float-left p-0"
+  }, [_c('div', {
+    staticClass: "col-sm-12 col-md-12 col-lg-12 col-xl-12 Search-panel float-left pt-2 p-0"
+  }, [_c('div', {
+    staticClass: "col-sm-12 col-md-12 col-lg-6 col-xl-6 float-left"
+  }, [_c('div', {
+    staticClass: "row mt-0"
+  }, [_c('div', {
+    staticClass: "col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 float-left pr-1 pl-0"
+  }, [_c('div', {
+    staticClass: "form-group"
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.Scan_Items,
+      expression: "Scan_Items"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "placeholder": "Search by Group Name",
+      "autocomplete": "off",
+      "name": "search"
+    },
+    domProps: {
+      "value": _vm.Scan_Items
+    },
+    on: {
+      "input": function ($event) {
+        if ($event.target.composing) return;
+        _vm.Scan_Items = $event.target.value;
+      }
+    }
+  })])]), _c('div', {
+    staticClass: "col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 float-left pl-0"
+  }, [_c('div', {
+    staticClass: "search-btm-btn background-0 text-left form-check-inline m-0"
+  }, [_c('a', {
+    staticClass: "btn btn-success mr-1 px-4",
+    attrs: {
+      "href": "javascript:;",
+      "title": "Search"
+    },
+    on: {
+      "click": _vm.SearchData
+    }
+  }, [_c('em', {
+    staticClass: "fa fa-search text-white"
+  })]), _c('a', {
+    staticClass: "btn btn-danger clearsearchtext px-4",
+    attrs: {
+      "title": "Clear",
+      "href": "javascript:;"
+    },
+    on: {
+      "click": _vm.ResetData
+    }
+  }, [_c('em', {
+    staticClass: "fa fa-refresh"
+  })])])])])])])]), _c('div', {
+    staticClass: "listing mt-2"
+  }, [_c('div', {
+    staticClass: "table-responsive"
+  }, [_c('table', {
+    staticClass: "table table-bordered mt-0",
+    attrs: {
+      "id": "itmgrplisting"
+    }
+  }, [_c('thead', {
+    staticClass: "thead-bg"
+  }, [_c('tr', [_c('th', [_c('span', {
+    staticClass: "sort",
+    attrs: {
+      "href": "javascript:;",
+      "id": "Group_name"
+    },
+    on: {
+      "click": function ($event) {
+        return _vm.sortdata('NAME');
+      }
+    }
+  }, [_vm._v("Group Name")])]), _vm._m(2), _vm._m(3), _vm._m(4), _vm._m(5), _vm._m(6)])]), _c('tbody', [_vm._l(_vm.GroupData, function (item, index) {
+    return _c('tr', {
+      key: index
+    }, [_c('td', [_c('span', {
+      staticClass: "text-overflow-dynamic-container"
+    }, [_vm._v(_vm._s(item.Group_name))])]), _c('td', {
+      staticClass: "text-center single-action"
+    }, [_c('span', {
+      staticClass: "text-dark"
+    }, [_c('i', {
+      staticClass: "fa fa-list",
+      attrs: {
+        "aria-hidden": "true"
+      }
+    }), _c('RouterLink', {
+      attrs: {
+        "to": "/Asset/ScannedItems"
+      }
+    }, [_c('span', {
+      staticClass: "noti-circle noti-blue"
+    }, [_vm._v(_vm._s(item.Total_Items) + " ")])])], 1)]), _c('td', {
+      staticClass: "text-center single-action"
+    }, [_c('span', {
+      staticClass: "text-dark"
+    }, [_c('i', {
+      staticClass: "fa fa-list",
+      attrs: {
+        "aria-hidden": "true"
+      }
+    }), _c('RouterLink', {
+      attrs: {
+        "to": "/Asset/RFIDMyDeviceList"
+      }
+    }, [_c('span', {
+      staticClass: "noti-circle noti-green"
+    }, [_vm._v(_vm._s(item.Scanned_Items))])])], 1)]), _c('td', {
+      staticClass: "text-center single-action"
+    }, [_c('span', {
+      staticClass: "text-dark"
+    }, [_c('i', {
+      staticClass: "fa fa-list",
+      attrs: {
+        "aria-hidden": "true"
+      }
+    }), _c('RouterLink', {
+      attrs: {
+        "to": "/Asset/MissingItems"
+      }
+    }, [_c('span', {
+      staticClass: "noti-circle noti-orange"
+    }, [_vm._v(_vm._s(item.Missing_Items))])])], 1)]), _c('td', [_c('span', {
+      staticClass: "text-overflow-dynamic-container"
+    }, [_vm._v(_vm._s(_vm.$options.filters.formatDateTime(item.ScanTime)))])]), _c('td', [_c('span', {
+      staticClass: "text-overflow-dynamic-container"
+    }, [_vm._v(_vm._s(item.Notification_Status))])])]);
+  }), _vm.noRecord ? _c('tr', [_c('td', {
+    staticClass: "text-center text-danger no-record",
+    attrs: {
+      "colspan": "8"
+    }
+  }, [_vm._v(_vm._s(_vm.$t('NoRecordfound')))])]) : _vm._e()], 2)])]), _c('Pager', {
+    attrs: {
+      "numberofrecords": _vm.TotalRecords,
+      "CurrentPageNumber": _vm.CurrentPage,
+      "prev-text": "Prev",
+      "first-text": "First",
+      "last-text": "Last",
+      "next-text": "Next"
+    },
+    on: {
+      "SetCurrentPage": _vm.pagerMethod
+    }
+  })], 1)])], 1);
+};
+var staticRenderFns = [function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c('a', {
+    staticClass: "p-action-btn text-white d-none",
+    attrs: {
+      "id": "ancChangeView",
+      "data-isshow": "0"
+    }
+  }, [_c('i', {
+    staticClass: "fa fa-pencil",
+    attrs: {
+      "aria-hidden": "true"
+    }
+  }), _c('br'), _vm._v("Change View")]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c('span', {
+    staticClass: "collapse-head-btns"
+  }, [_c('a', {
+    staticClass: "collapse-btns",
+    attrs: {
+      "href": "javascript:;"
+    }
+  }, [_c('i', {
+    staticClass: "fa fa-angle-up text-white"
+  })])]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c('th', [_c('span', {
+    attrs: {
+      "href": "javascript:;",
+      "id": "Total_Items"
+    }
+  }, [_vm._v("Total Items ")])]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c('th', [_c('span', {
+    attrs: {
+      "href": "javascript:;",
+      "id": "Scanned_Items"
+    }
+  }, [_vm._v("Scanned Items")])]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c('th', [_c('span', [_vm._v(" Missing Items ")])]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c('th', [_c('span', {
+    attrs: {
+      "id": "ScanTime"
+    }
+  }, [_vm._v(" Scan Time")])]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c('th', [_c('span', {
+    attrs: {
+      "id": "Notification_Status"
+    }
+  }, [_vm._v(" Notification Status")])]);
+}];
+
+// CONCATENATED MODULE: ./src/views/Asset/ItemsScanSummary.vue?vue&type=template&id=19d9e32d&
+
+// EXTERNAL MODULE: ./src/service/DataService.js + 1 modules
+var DataService = __webpack_require__("1115");
+
+// EXTERNAL MODULE: ./src/components/Common/Pager.vue + 4 modules
+var Pager = __webpack_require__("4555");
+
+// EXTERNAL MODULE: ./src/components/Common/ListingStatus.vue + 4 modules
+var ListingStatus = __webpack_require__("df17");
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--13-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader/lib??vue-loader-options!./src/views/Asset/ItemsScanSummary.vue?vue&type=script&lang=js&
+
+
+
+/* harmony default export */ var ItemsScanSummaryvue_type_script_lang_js_ = ({
+  components: {
+    Pager: Pager["a" /* default */],
+    StatusList: ListingStatus["a" /* default */]
+  },
+  data() {
+    return {
+      txtsearch: null,
+      Case: 0,
+      ListType: true,
+      Scan_Items: '',
+      sortBy: '',
+      sortExp: '',
+      Name: '',
+      GroupData: [],
+      noRecord: false,
+      TotalRecords: 0,
+      pageNum: 1,
+      PageSize: 10,
+      CurrentPage: 1,
+      TotalPages: 0,
+      isLoading: false
+    };
+  },
+  created: function () {
+    this.GetItemsScanSummary();
+  },
+  methods: {
+    GetItemsScanSummary: function () {
+      var vueObj = this;
+      // this.isLoading=true;      
+      // var url =`search=${this.Scan_Items}&pageSize=${vueObj.PageSize}&pageNum=${vueObj.pageNum}&sortBy=&sortExp=&Type=${this.Type}`;
+      var url = `search=${this.Scan_Items}&pageSize=${vueObj.PageSize}&pageNum=${vueObj.pageNum}&sortBy=${this.sortBy}&sortExp=${this.sortExp}`;
+      DataService["a" /* default */].GetRFIDGroupItemList(url).then(response => {
+        if (response.data != null) {
+          if (response.data.length > 0) {
+            vueObj.GroupData = response.data;
+            vueObj.TotalRecords = response.data[0].Total_Items;
+            vueObj.TotalPages = Math.ceil(vueObj.TotalRecords / vueObj.PageSize);
+            vueObj.CurrentPage = vueObj.pageNum;
+            vueObj.noRecord = false;
+            vueObj.isLoading = false;
+          } else {
+            vueObj.GroupData = [];
+            vueObj.noRecord = true;
+            vueObj.TotalRecords = 0;
+          }
+        } else {
+          vueObj.noRecord = true;
+          vueObj.GroupData = [];
+          vueObj.TotalRecords = 0;
+          vueObj.isLoading = false;
+        }
+        setTimeout(function () {
+          vueObj.CheckBoxBootstrap();
+        }, 100);
+      });
+    },
+    SearchData: function () {
+      this.pageNum = 1;
+      this.GetItemsScanSummary();
+    },
+    ResetData: function () {
+      this.Scan_Items = '';
+      this.GetItemsScanSummary();
+    },
+    pagerMethod: function (value) {
+      this.PageSize = value.PageSize;
+      this.pageNum = value.PageNumber;
+      this.GetItemsScanSummary();
+    },
+    sortdata: function (val) {
+      this.sortBy = val;
+      this.sortExp = this.sortExp == 'DESC' ? 'ASC' : 'DESC';
+      this.GetItemsScanSummary();
+    }
+  }
+});
+// CONCATENATED MODULE: ./src/views/Asset/ItemsScanSummary.vue?vue&type=script&lang=js&
+ /* harmony default export */ var Asset_ItemsScanSummaryvue_type_script_lang_js_ = (ItemsScanSummaryvue_type_script_lang_js_); 
+// EXTERNAL MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
+var componentNormalizer = __webpack_require__("2877");
+
+// CONCATENATED MODULE: ./src/views/Asset/ItemsScanSummary.vue
+
+
+
+
+
+/* normalize component */
+
+var component = Object(componentNormalizer["a" /* default */])(
+  Asset_ItemsScanSummaryvue_type_script_lang_js_,
+  render,
+  staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* harmony default export */ var ItemsScanSummary = __webpack_exports__["default"] = (component.exports);
+
+/***/ })
+
+}]);
 //# sourceMappingURL=chunk-2ff4a0ac.js.map

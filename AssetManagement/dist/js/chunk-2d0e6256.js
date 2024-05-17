@@ -1,2 +1,299 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0e6256"],{9801:function(t,a,s){"use strict";s.r(a);var e=function(){var t=this,a=t._self._c;return a("section",{staticClass:"main-content"},[a("div",{staticClass:"padding-t_10"},[t._m(0),t._m(1),0!=t.GroupName.length?a("div",{staticClass:"listing mt-2",attrs:{id:"detailTable"}},t._l(t.GroupName,(function(s,e){return a("div",{key:e},[a("div",{staticClass:"accordion custom-accr"},[a("div",{staticClass:"card"},[a("div",{staticClass:"card-header",attrs:{role:"tab",id:"headingTwo2"}},[a("a",{staticClass:"collapsed font-dark",attrs:{"data-toggle":"collapse","data-parent":"#accordionEx"}},[a("em",{staticClass:"fa fa-angle-down rotate-icon",attrs:{"aria-hidden":"true"}}),t._v(t._s(s.groupData[0].device_name)+"( "+t._s(s.groupKey)+") ")])]),a("div",{staticClass:"collapse show",attrs:{role:"tabpanel","data-parent":"#accordionEx"}},[a("div",{staticClass:"card-body py-0 pb-3 px-0"},[a("div",{staticClass:"table-responsive border-0"},[a("div",{staticClass:"dataTables_wrapper no-footer",attrs:{id:"example_wrapper"}},[a("table",{staticClass:"table table-bordered dt-responsive nowrap mt-0 dataTable no-footer dtr-inline",staticStyle:{width:"100%"},attrs:{id:"example",role:"grid","aria-describedby":"example_info"}},[t._m(2,!0),a("tbody",[0==t.GroupName.length?a("tr",{staticClass:"text-center text-danger no-record",attrs:{colspan:"20"}},[t._v(" "+t._s(t.$t("NoRecordfound"))+" ")]):t._e(),t._l(s.groupData,(function(s,e){return a("tr",{key:e},[a("td",[t._v(t._s(s.LOCATION_NAME))]),a("td",[t._v(t._s(s.ASSET_TYPE))]),a("td",[t._v(t._s(s.unique_name))]),a("td",[t._v(t._s(s.ITEM_CODE))]),a("td",[t._v(t._s(s.sub_location))]),a("td",[t._v(t._s(s.serial_number))]),a("td",[t._v(t._s(s.EPC_TAG))]),a("td",[t._v(t._s(s.ip_address)+"("+t._s(s.device_name)+")")]),a("td",[t._v(t._s(s.STATUS_NAME))]),t._m(3,!0)])}))],2)])])])])])])])])})),0):t._e(),0==t.GroupName.length?a("div",{staticClass:"listing mt-2",attrs:{id:"detailTable"}},[a("div",{staticClass:"accordion custom-accr"},[a("div",{staticClass:"card"},[a("div",{staticClass:"collapse show",attrs:{role:"tabpanel","data-parent":"#accordionEx"}},[a("div",{staticClass:"card-body py-0 pb-3 px-0"},[a("div",{staticClass:"table-responsive border-0"},[a("div",{staticClass:"dataTables_wrapper no-footer",attrs:{id:"example_wrapper"}},[a("table",{staticClass:"table table-bordered dt-responsive nowrap mt-0 dataTable no-footer dtr-inline",staticStyle:{width:"100%"},attrs:{id:"example",role:"grid","aria-describedby":"example_info"}},[t._m(4),a("tbody",[0==t.GroupName.length?a("tr",[a("td",{staticClass:"text-center text-danger no-record",attrs:{colspan:"20"}},[t._v(" "+t._s(t.$t("NoRecordfound"))+" ")])]):t._e()])])])])])])])])]):t._e()])])},r=[function(){var t=this,a=t._self._c;return a("div",{staticClass:"col-md-12 p-0"},[a("div",{staticClass:"theme-primary"},[a("span",{staticClass:"p-name text-white textelipsis"},[t._v(" Scanned Items Status ")])])])},function(){var t=this,a=t._self._c;return a("div",{staticClass:"row"},[a("div",{staticClass:"col-12 mt-2"},[a("div",{staticClass:"mr-2 d-inline-block"},[a("span",{staticClass:"legends_profile colorboxsquare"}),t._v(" Missing Products ")])])])},function(){var t=this,a=t._self._c;return a("thead",{staticClass:"thead-bg"},[a("tr",{attrs:{role:"row"}},[a("th",[a("span",[t._v("Location")])]),a("th",[a("span",[t._v("Product Type")])]),a("th",[a("span",[t._v("Product Name")])]),a("th",[a("span",[t._v("Unique Code")])]),a("th",[a("span",[t._v("Sub Location")])]),a("th",[a("span",[t._v("Serial Number")])]),a("th",[a("span",[t._v("EPC Tags")])]),a("th",[a("span",[t._v("IP Address")])]),a("th",[a("span",[t._v("Status")])]),a("th",{staticClass:"text-center"},[a("span",[t._v("Actions")])])])])},function(){var t=this,a=t._self._c;return a("td",{staticClass:"text-center"},[a("a",{staticStyle:{cursor:"pointer"},attrs:{href:"",title:"Edit",id:"Edit"}},[a("em",{staticClass:"fa fa-pencil text-success mx-1 action-icon enable"})]),a("a",{staticClass:"d-none",attrs:{href:"",id:"",title:"Assign"}},[a("em",{staticClass:"fa fa-user pr-2 text-primary action-icon mx-1"})]),a("a",{attrs:{href:"javascript:;",title:"Location","data-locationId":"@item1.LocationId"}},[a("em",{staticClass:"fa fa-map-marker mx-1 text-warning action-icon"})])])},function(){var t=this,a=t._self._c;return a("thead",{staticClass:"thead-bg"},[a("tr",{attrs:{role:"row"}},[a("th",[a("span",[t._v("Location")])]),a("th",[a("span",[t._v("Product Type")])]),a("th",[a("span",[t._v("Product Name")])]),a("th",[a("span",[t._v("Unique Code")])]),a("th",[a("span",[t._v("Sub Location")])]),a("th",[a("span",[t._v("Serial Number")])]),a("th",[a("span",[t._v("EPC Tags")])]),a("th",[a("span",[t._v("IP Address")])]),a("th",[a("span",[t._v("Status")])]),a("th",{staticClass:"text-center"},[a("span",[t._v("Actions")])])])])}],i=(s("14d9"),s("1115")),n={data(){return{isLoading:!1,Scanneditemsdata:[],searchdata:"",locationId:"",pageSize:100,pageNum:1,sortBy:"",sortExp:"",ePC_TAG:"",GroupName:[]}},created(){this.fetchData()},methods:{fetchData(){var t=this,a=`search=${t.searchdata}&locationId=${t.locationId}&pageSize=${t.pageSize}&pageNum=${t.pageNum}&sortBy=${t.sortBy}&sortExp=${t.sortExp}&ePC_TAG=${t.ePC_TAG}`;i["a"].GetScanneditemsData(a).then(a=>{if(""!=a.data&&null!=a.data){t.Scanneditemsdata=a.data,t.GroupName=[];var s="";$.each(t.Scanneditemsdata,$.proxy((function(a,e){s=e.ip_address;var r=$.grep(t.GroupName,(function(t,a){return t.groupKey==s}));if(0==r.length){var i=$.grep(t.Scanneditemsdata,(function(t,a){return t.ip_address==s}));if(i.length>0){var n={groupKey:s,groupData:i};t.GroupName.push(n)}}}),this)),console.log("dsfgfdsg",t.GroupName)}}).catch(t=>{console.log(t)})}}},o=n,d=s("2877"),c=Object(d["a"])(o,e,r,!1,null,null,null);a["default"]=c.exports}}]);
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["chunk-2d0e6256"],{
+
+/***/ "9801":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"40274a44-vue-loader-template"}!./node_modules/cache-loader/dist/cjs.js??ref--13-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader/lib??vue-loader-options!./src/views/Asset/RFIDMyDeviceList.vue?vue&type=template&id=46ad6d2c&
+var render = function render() {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c('section', {
+    staticClass: "main-content"
+  }, [_c('div', {
+    staticClass: "padding-t_10"
+  }, [_vm._m(0), _vm._m(1), _vm.GroupName.length != 0 ? _c('div', {
+    staticClass: "listing mt-2",
+    attrs: {
+      "id": "detailTable"
+    }
+  }, _vm._l(_vm.GroupName, function (ParentItem, ParentIndex) {
+    return _c('div', {
+      key: ParentIndex
+    }, [_c('div', {
+      staticClass: "accordion custom-accr"
+    }, [_c('div', {
+      staticClass: "card"
+    }, [_c('div', {
+      staticClass: "card-header",
+      attrs: {
+        "role": "tab",
+        "id": "headingTwo2"
+      }
+    }, [_c('a', {
+      staticClass: "collapsed font-dark",
+      attrs: {
+        "data-toggle": "collapse",
+        "data-parent": "#accordionEx"
+      }
+    }, [_c('em', {
+      staticClass: "fa fa-angle-down rotate-icon",
+      attrs: {
+        "aria-hidden": "true"
+      }
+    }), _vm._v(_vm._s(ParentItem.groupData[0].device_name) + "( " + _vm._s(ParentItem.groupKey) + ") ")])]), _c('div', {
+      staticClass: "collapse show",
+      attrs: {
+        "role": "tabpanel",
+        "data-parent": "#accordionEx"
+      }
+    }, [_c('div', {
+      staticClass: "card-body py-0 pb-3 px-0"
+    }, [_c('div', {
+      staticClass: "table-responsive border-0"
+    }, [_c('div', {
+      staticClass: "dataTables_wrapper no-footer",
+      attrs: {
+        "id": "example_wrapper"
+      }
+    }, [_c('table', {
+      staticClass: "table table-bordered dt-responsive nowrap mt-0 dataTable no-footer dtr-inline",
+      staticStyle: {
+        "width": "100%"
+      },
+      attrs: {
+        "id": "example",
+        "role": "grid",
+        "aria-describedby": "example_info"
+      }
+    }, [_vm._m(2, true), _c('tbody', [_vm.GroupName.length == 0 ? _c('tr', {
+      staticClass: "text-center text-danger no-record",
+      attrs: {
+        "colspan": "20"
+      }
+    }, [_vm._v(" " + _vm._s(_vm.$t('NoRecordfound')) + " ")]) : _vm._e(), _vm._l(ParentItem.groupData, function (ChildItem, ChildIndex) {
+      return _c('tr', {
+        key: ChildIndex
+      }, [_c('td', [_vm._v(_vm._s(ChildItem.LOCATION_NAME))]), _c('td', [_vm._v(_vm._s(ChildItem.ASSET_TYPE))]), _c('td', [_vm._v(_vm._s(ChildItem.unique_name))]), _c('td', [_vm._v(_vm._s(ChildItem.ITEM_CODE))]), _c('td', [_vm._v(_vm._s(ChildItem.sub_location))]), _c('td', [_vm._v(_vm._s(ChildItem.serial_number))]), _c('td', [_vm._v(_vm._s(ChildItem.EPC_TAG))]), _c('td', [_vm._v(_vm._s(ChildItem.ip_address) + "(" + _vm._s(ChildItem.device_name) + ")")]), _c('td', [_vm._v(_vm._s(ChildItem.STATUS_NAME))]), _vm._m(3, true)]);
+    })], 2)])])])])])])])]);
+  }), 0) : _vm._e(), _vm.GroupName.length == 0 ? _c('div', {
+    staticClass: "listing mt-2",
+    attrs: {
+      "id": "detailTable"
+    }
+  }, [_c('div', {
+    staticClass: "accordion custom-accr"
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_c('div', {
+    staticClass: "collapse show",
+    attrs: {
+      "role": "tabpanel",
+      "data-parent": "#accordionEx"
+    }
+  }, [_c('div', {
+    staticClass: "card-body py-0 pb-3 px-0"
+  }, [_c('div', {
+    staticClass: "table-responsive border-0"
+  }, [_c('div', {
+    staticClass: "dataTables_wrapper no-footer",
+    attrs: {
+      "id": "example_wrapper"
+    }
+  }, [_c('table', {
+    staticClass: "table table-bordered dt-responsive nowrap mt-0 dataTable no-footer dtr-inline",
+    staticStyle: {
+      "width": "100%"
+    },
+    attrs: {
+      "id": "example",
+      "role": "grid",
+      "aria-describedby": "example_info"
+    }
+  }, [_vm._m(4), _c('tbody', [_vm.GroupName.length == 0 ? _c('tr', [_c('td', {
+    staticClass: "text-center text-danger no-record",
+    attrs: {
+      "colspan": "20"
+    }
+  }, [_vm._v(" " + _vm._s(_vm.$t('NoRecordfound')) + " ")])]) : _vm._e()])])])])])])])])]) : _vm._e()])]);
+};
+var staticRenderFns = [function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c('div', {
+    staticClass: "col-md-12 p-0"
+  }, [_c('div', {
+    staticClass: "theme-primary"
+  }, [_c('span', {
+    staticClass: "p-name text-white textelipsis"
+  }, [_vm._v(" Scanned Items Status ")])])]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "col-12 mt-2"
+  }, [_c('div', {
+    staticClass: "mr-2 d-inline-block"
+  }, [_c('span', {
+    staticClass: "legends_profile colorboxsquare"
+  }), _vm._v(" Missing Products ")])])]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c('thead', {
+    staticClass: "thead-bg"
+  }, [_c('tr', {
+    attrs: {
+      "role": "row"
+    }
+  }, [_c('th', [_c('span', [_vm._v("Location")])]), _c('th', [_c('span', [_vm._v("Product Type")])]), _c('th', [_c('span', [_vm._v("Product Name")])]), _c('th', [_c('span', [_vm._v("Unique Code")])]), _c('th', [_c('span', [_vm._v("Sub Location")])]), _c('th', [_c('span', [_vm._v("Serial Number")])]), _c('th', [_c('span', [_vm._v("EPC Tags")])]), _c('th', [_c('span', [_vm._v("IP Address")])]), _c('th', [_c('span', [_vm._v("Status")])]), _c('th', {
+    staticClass: "text-center"
+  }, [_c('span', [_vm._v("Actions")])])])]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c('td', {
+    staticClass: "text-center"
+  }, [_c('a', {
+    staticStyle: {
+      "cursor": "pointer"
+    },
+    attrs: {
+      "href": "",
+      "title": "Edit",
+      "id": "Edit"
+    }
+  }, [_c('em', {
+    staticClass: "fa fa-pencil text-success mx-1 action-icon enable"
+  })]), _c('a', {
+    staticClass: "d-none",
+    attrs: {
+      "href": "",
+      "id": "",
+      "title": "Assign"
+    }
+  }, [_c('em', {
+    staticClass: "fa fa-user pr-2 text-primary action-icon mx-1"
+  })]), _c('a', {
+    attrs: {
+      "href": "javascript:;",
+      "title": "Location",
+      "data-locationId": "@item1.LocationId"
+    }
+  }, [_c('em', {
+    staticClass: "fa fa-map-marker mx-1 text-warning action-icon"
+  })])]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c('thead', {
+    staticClass: "thead-bg"
+  }, [_c('tr', {
+    attrs: {
+      "role": "row"
+    }
+  }, [_c('th', [_c('span', [_vm._v("Location")])]), _c('th', [_c('span', [_vm._v("Product Type")])]), _c('th', [_c('span', [_vm._v("Product Name")])]), _c('th', [_c('span', [_vm._v("Unique Code")])]), _c('th', [_c('span', [_vm._v("Sub Location")])]), _c('th', [_c('span', [_vm._v("Serial Number")])]), _c('th', [_c('span', [_vm._v("EPC Tags")])]), _c('th', [_c('span', [_vm._v("IP Address")])]), _c('th', [_c('span', [_vm._v("Status")])]), _c('th', {
+    staticClass: "text-center"
+  }, [_c('span', [_vm._v("Actions")])])])]);
+}];
+
+// CONCATENATED MODULE: ./src/views/Asset/RFIDMyDeviceList.vue?vue&type=template&id=46ad6d2c&
+
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.push.js
+var es_array_push = __webpack_require__("14d9");
+
+// EXTERNAL MODULE: ./src/service/DataService.js + 1 modules
+var DataService = __webpack_require__("1115");
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--13-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader/lib??vue-loader-options!./src/views/Asset/RFIDMyDeviceList.vue?vue&type=script&lang=js&
+
+
+/* harmony default export */ var RFIDMyDeviceListvue_type_script_lang_js_ = ({
+  data() {
+    return {
+      isLoading: false,
+      Scanneditemsdata: [],
+      searchdata: '',
+      locationId: '',
+      pageSize: 100,
+      pageNum: 1,
+      sortBy: '',
+      sortExp: '',
+      ePC_TAG: '',
+      GroupName: []
+    };
+  },
+  created() {
+    this.fetchData();
+  },
+  methods: {
+    fetchData() {
+      var vueObj = this;
+      var params = `search=${vueObj.searchdata}&locationId=${vueObj.locationId}&pageSize=${vueObj.pageSize}&pageNum=${vueObj.pageNum}&sortBy=${vueObj.sortBy}&sortExp=${vueObj.sortExp}&ePC_TAG=${vueObj.ePC_TAG}`;
+      DataService["a" /* default */].GetScanneditemsData(params).then(response => {
+        debugger;
+        if (response.data != '' && response.data != null) {
+          vueObj.Scanneditemsdata = response.data;
+          vueObj.GroupName = [];
+          var gruopBy = "";
+          $.each(vueObj.Scanneditemsdata, $.proxy(function (index, item) {
+            gruopBy = item.ip_address;
+            var chkGroup = $.grep(vueObj.GroupName, function (element, index) {
+              return element.groupKey == gruopBy;
+            });
+            if (chkGroup.length == 0) {
+              var returnedData = $.grep(vueObj.Scanneditemsdata, function (element, index) {
+                return element.ip_address == gruopBy;
+              });
+              if (returnedData.length > 0) {
+                var objGroup = {
+                  groupKey: gruopBy,
+                  groupData: returnedData
+                };
+                vueObj.GroupName.push(objGroup);
+              }
+            }
+          }, this));
+          console.log('dsfgfdsg', vueObj.GroupName);
+        }
+      }).catch(err => {
+        console.log(err);
+      });
+    }
+  }
+});
+// CONCATENATED MODULE: ./src/views/Asset/RFIDMyDeviceList.vue?vue&type=script&lang=js&
+ /* harmony default export */ var Asset_RFIDMyDeviceListvue_type_script_lang_js_ = (RFIDMyDeviceListvue_type_script_lang_js_); 
+// EXTERNAL MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
+var componentNormalizer = __webpack_require__("2877");
+
+// CONCATENATED MODULE: ./src/views/Asset/RFIDMyDeviceList.vue
+
+
+
+
+
+/* normalize component */
+
+var component = Object(componentNormalizer["a" /* default */])(
+  Asset_RFIDMyDeviceListvue_type_script_lang_js_,
+  render,
+  staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* harmony default export */ var RFIDMyDeviceList = __webpack_exports__["default"] = (component.exports);
+
+/***/ })
+
+}]);
 //# sourceMappingURL=chunk-2d0e6256.js.map

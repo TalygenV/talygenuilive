@@ -1,2 +1,2376 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-a41644bc"],{1786:function(t,e,a){"use strict";a.r(e);var i=function(){var t=this,e=t._self._c;return e("section",{staticClass:"main-content",attrs:{id:"main-content"}},[e("loader",{attrs:{"is-visible":t.isLoading}}),e("section",{staticClass:"page-action"},[e("div",{staticClass:"row"},[e("div",{staticClass:"col-md-12 padding-t_8"},[e("div",{staticClass:"theme-primary partition-full"},[e("span",{staticClass:"p-name text-white"},[t._v(t._s(t.$t("Import Product")))]),e("span",{staticClass:"p-actions float-right"},[e("a",{staticClass:"p-action-btn text-white",attrs:{title:"BacktoList"},on:{click:t.BackTolist}},[e("em",{staticClass:"fa fa-angle-double-left pr-2"}),e("br"),e("span",[t._v(t._s(t.$t("BacktoList")))])])])])])])]),e("div",{staticClass:"user-guide-custom d-none"},[t._v(" "+t._s(t.$t("User_Guide_ProductSampleImport"))+" ")]),e("div",{staticClass:"border p-3"},[e("div",{staticClass:"row"},[e("div",{staticClass:"col-lg-4"},[e("div",{staticClass:"form-group"},[e("label",[t._v(t._s(t.$t("Download Product Sample File"))+":")]),e("div",{staticClass:"input-group mb-3"},[e("div",{staticClass:"form-control"},[e("i",{staticClass:"fa fa-file-excel-o pr-1 text-success"}),t._v(t._s(t.$t("ProductSample"))+".xls ")]),t._m(0)])])]),e("div",{staticClass:"col-lg-4"},[e("div",{staticClass:"form-group"},[e("label",[t._v(t._s(t.$t("Upload a File"))+":"),e("span",{staticClass:"text-danger"},[t._v("*")])]),e("div",{staticClass:"input-group"},[e("div",{staticClass:"custom-file ProductSampleFile"},[e("input",{staticStyle:{position:"absolute",clip:"rect(0px, 0px, 0px, 0px)"},attrs:{type:"file",name:"FileSrc",id:"flAvatar",multiple:"true",tabindex:"-1"},on:{change:function(e){return t.setFile(e)}}}),e("div",{staticClass:"bootstrap-filestyle input-group"},[e("input",{directives:[{name:"model",rawName:"v-model",value:t.attachmentName,expression:"attachmentName"}],staticClass:"form-control disabled",attrs:{type:"text",disabled:""},domProps:{value:t.attachmentName},on:{input:function(e){e.target.composing||(t.attachmentName=e.target.value)}}}),e("div",{staticClass:"input-group-append",staticStyle:{cursor:"pointer"}},[e("span",{staticClass:"group-span-filestyle input-group-btn input-group-text bg-white",attrs:{tabindex:"0"}},[e("label",{staticClass:"mb-0 font-weight-normal",attrs:{title:"Click here to select a file.",for:"flAvatar"}},[t._v(t._s(t.$t("FileControlText")))])]),e("span",{staticClass:"input-group-text border-0 bg-transparent p-0 pl-2"},[e("a",{staticClass:"round-icon-small btn-danger-light",attrs:{href:"javascript:;",title:"Clear"},on:{click:t.Clear}},[e("i",{staticClass:"fa fa-undo"})])])])])])])])])]),e("div",{staticClass:"row flex-row-reverse"},[e("div",{staticClass:"col-lg-6 text-right"},[e("a",{staticClass:"btn btn-info formbtn mr-1",attrs:{href:"javascript:void(0);",title:t.$t("ImportFromExcelFile")},on:{click:function(e){return t.UploadProductSampleFile()}}},[e("i",{staticClass:"fa fa-download pr-2"}),t._v(t._s(t.$t("Import Product Sample File")))]),e("a",{staticClass:"btn btn-danger formbtn my-2",attrs:{title:"","data-toggle-tooltip":"tooltip","data-original-title":"Cancel"},on:{click:function(e){return t.onCancel()}}},[e("i",{staticClass:"fa fa-close mr-2"}),t._v("Cancel")])])])]),t.ShowImportProduct?e("ImportProduct",{ref:"myChild",attrs:{filepath:t.filepath}}):t._e()],1)},s=[function(){var t=this,e=t._self._c;return e("div",{staticClass:"input-group-append downloadProductSample"},[e("span",{staticClass:"input-group-text",attrs:{id:"basic-addon2"}},[e("a",{attrs:{href:"https://cogniterblob.blob.core.windows.net/global/SampleFiles/sample-file-asset-product-import.xls",download:""}},[e("i",{staticClass:"fa fa-download text-primary"})])])])}],r=(a("14d9"),function(){var t=this,e=t._self._c;return e("section",[e("loader",{attrs:{"is-visible":t.isLoading}}),e("div",{staticClass:"listing mt-2"},[e("div",{staticClass:"col-lg-12 float-left px-0"},[e("div",{staticClass:"table-responsive"},[e("Form",{ref:"Productimport"},[e("table",{staticClass:"table table-bordered dt-responsive nowrap mt-0",attrs:{id:"tblExpList"}},[e("thead",{staticClass:"thead-bg"},[e("tr",[e("th",{staticClass:"ui-resizable",staticStyle:{width:"156px","min-width":"156px","max-width":"156px"},attrs:{id:"th-PRODUCTTYPE"}},[e("span",{staticClass:"d-inline-block",staticStyle:{"min-width":"138px"}},[t._v("Product Type"),e("span",{staticClass:"d-inline-block"},[e("span",{staticClass:"text-danger"},[t._v("*")])])]),e("div",{staticClass:"sizer",attrs:{id:"th-PRODUCTTYPE-sizer"}}),e("div",{staticClass:"ui-resizable-handle ui-resizable-e",staticStyle:{"z-index":"90"}})]),e("th",{staticClass:"ui-resizable",staticStyle:{width:"156px","min-width":"156px","max-width":"156px"},attrs:{id:"th-STATUS"}},[e("span",{staticClass:"d-inline-block",staticStyle:{"min-width":"67px"}},[t._v("Status"),e("span",{staticClass:"d-inline-block"},[e("span",{staticClass:"text-danger"},[t._v("*")])])]),e("div",{staticClass:"sizer",attrs:{id:"th-STATUS-sizer"}}),e("div",{staticClass:"ui-resizable-handle ui-resizable-e",staticStyle:{"z-index":"90"}})]),e("th",{staticClass:"ui-resizable",staticStyle:{width:"156px","min-width":"156px","max-width":"156px"},attrs:{id:"th-PRODUCTNAME"}},[e("span",{staticClass:"d-inline-block",staticStyle:{"min-width":"138px"}},[t._v("Product Name"),e("span",{staticClass:"d-inline-block"},[e("span",{staticClass:"text-danger"},[t._v("*")])])]),e("div",{staticClass:"sizer",attrs:{id:"th-PRODUCTNAME-sizer"}}),e("div",{staticClass:"ui-resizable-handle ui-resizable-e",staticStyle:{"z-index":"90"}})]),e("th",{staticClass:"ui-resizable",staticStyle:{width:"144px","min-width":"144px","max-width":"144px"},attrs:{id:"th-PRODUCTCODE"}},[e("span",{staticStyle:{"min-width":"126px"}},[t._v("Product Code")]),e("div",{staticClass:"sizer",attrs:{id:"th-PRODUCTCODE-sizer"}}),e("div",{staticClass:"ui-resizable-handle ui-resizable-e",staticStyle:{"z-index":"90"}})]),e("th",{staticClass:"ui-resizable",staticStyle:{width:"156px","min-width":"156px","max-width":"156px"},attrs:{id:"th-BARCODETYPE"}},[e("span",{staticClass:"d-inline-block",staticStyle:{"min-width":"138px"}},[t._v("Barcode Type"),e("span",{staticClass:"d-inline-block"},[e("span",{staticClass:"text-danger"},[t._v("*")])])]),e("div",{staticClass:"sizer",attrs:{id:"th-BARCODETYPE-sizer"}}),e("div",{staticClass:"ui-resizable-handle ui-resizable-e",staticStyle:{"z-index":"90"}})]),e("th",{staticClass:"ui-resizable",staticStyle:{width:"320px","min-width":"320px","max-width":"320px"},attrs:{id:"th-DESCRIPTION"}},[e("span",{staticStyle:{"min-width":"114px"}},[t._v("Description")]),e("div",{staticClass:"sizer",attrs:{id:"th-DESCRIPTION-sizer"}}),e("div",{staticClass:"ui-resizable-handle ui-resizable-e",staticStyle:{"z-index":"90"}})]),e("th",{staticClass:"ui-resizable",staticStyle:{width:"132px","min-width":"132px","max-width":"132px"},attrs:{id:"th-CALIBRATION"}},[e("span",{staticStyle:{"min-width":"114px"}},[t._v("Calibration")]),e("div",{staticClass:"sizer",attrs:{id:"th-CALIBRATION-sizer"}}),e("div",{staticClass:"ui-resizable-handle ui-resizable-e",staticStyle:{"z-index":"90"}})]),e("th",{staticClass:"ui-resizable",staticStyle:{width:"156px","min-width":"156px","max-width":"156px"},attrs:{id:"th-AUDIT"}},[e("span",{staticStyle:{"min-width":"67px"}},[t._v("Audit")]),e("div",{staticClass:"sizer",attrs:{id:"th-AUDIT-sizer"}}),e("div",{staticClass:"ui-resizable-handle ui-resizable-e",staticStyle:{"z-index":"90"}})]),e("th",{staticClass:"ui-resizable",staticStyle:{width:"156px","min-width":"156px","max-width":"156px"},attrs:{id:"th-IMAGECAPTURE"}},[e("span",{staticStyle:{"min-width":"138px"}},[t._v("Image Capture")]),e("div",{staticClass:"sizer",attrs:{id:"th-IMAGECAPTURE-sizer"}}),e("div",{staticClass:"ui-resizable-handle ui-resizable-e",staticStyle:{"z-index":"90"}})]),e("th",{staticClass:"ui-resizable",staticStyle:{width:"108px","min-width":"108px","max-width":"108px"},attrs:{id:"th-ISUNIQUE"}},[e("span",{staticStyle:{"min-width":"90px"}},[t._v("Is Unique")]),e("div",{staticClass:"sizer",attrs:{id:"th-ISUNIQUE-sizer"}}),e("div",{staticClass:"ui-resizable-handle ui-resizable-e",staticStyle:{"z-index":"90"}})]),e("th",{staticClass:"ui-resizable",staticStyle:{width:"156px","min-width":"200px","max-width":"200px"},attrs:{id:"th-LOCATION"}},[e("span",{staticClass:"d-inline-block",staticStyle:{"min-width":"90px"}},[t._v("Location"),e("span",{staticClass:"d-inline-block"},[e("span",{staticClass:"text-danger"},[t._v("*")])])]),e("div",{staticClass:"sizer",attrs:{id:"th-LOCATION-sizer"}}),e("div",{staticClass:"ui-resizable-handle ui-resizable-e",staticStyle:{"z-index":"90"}})]),e("th",{staticClass:"ui-resizable",staticStyle:{width:"108px","min-width":"108px","max-width":"108px"},attrs:{id:"th-QUANTITY"}},[e("span",{staticClass:"d-inline-block",staticStyle:{"min-width":"90px"}},[t._v("Quantity"),e("span",{staticClass:"d-inline-block"},[e("span",{staticClass:"text-danger"},[t._v("*")])])]),e("div",{staticClass:"sizer",attrs:{id:"th-QUANTITY-sizer"}}),e("div",{staticClass:"ui-resizable-handle ui-resizable-e",staticStyle:{"z-index":"90"}})]),e("th",{staticClass:"ui-resizable",staticStyle:{width:"85px","min-width":"85px","max-width":"85px"},attrs:{id:"th-MODEL"}},[e("span",{staticStyle:{"min-width":"67px"}},[t._v("Model")]),e("div",{staticClass:"sizer",attrs:{id:"th-MODEL-sizer"}}),e("div",{staticClass:"ui-resizable-handle ui-resizable-e",staticStyle:{"z-index":"90"}})]),e("th",{staticClass:"ui-resizable",staticStyle:{width:"144px","min-width":"144px","max-width":"144px"},attrs:{id:"th-MANUFACTURER"}},[e("span",{staticStyle:{"min-width":"126px"}},[t._v("Manufacturer")]),e("div",{staticClass:"sizer",attrs:{id:"th-MANUFACTURER-sizer"}}),e("div",{staticClass:"ui-resizable-handle ui-resizable-e",staticStyle:{"z-index":"90"}})]),e("th",{staticClass:"ui-resizable",staticStyle:{width:"85px","min-width":"85px","max-width":"85px"},attrs:{id:"th-VENDOR"}},[e("span",{staticStyle:{"min-width":"67px"}},[t._v("Vendor")]),e("div",{staticClass:"sizer",attrs:{id:"th-VENDOR-sizer"}}),e("div",{staticClass:"ui-resizable-handle ui-resizable-e",staticStyle:{"z-index":"90"}})]),e("th",{staticClass:"ui-resizable",staticStyle:{width:"192px","min-width":"192px","max-width":"192px"},attrs:{id:"th-PRODUCTCOSTQTY"}},[e("span",{staticStyle:{"min-width":"174px"}},[t._v("Product Cost/Qty")]),e("div",{staticClass:"sizer",attrs:{id:"th-PRODUCTCOSTQTY-sizer"}}),e("div",{staticClass:"ui-resizable-handle ui-resizable-e",staticStyle:{"z-index":"90"}})]),e("th",{staticClass:"ui-resizable",staticStyle:{width:"168px","min-width":"168px","max-width":"168px"},attrs:{id:"th-PURCHASEORDER"}},[e("span",{staticStyle:{"min-width":"150px"}},[t._v("Purchase Order")]),e("div",{staticClass:"sizer",attrs:{id:"th-PURCHASEORDER-sizer"}}),e("div",{staticClass:"ui-resizable-handle ui-resizable-e",staticStyle:{"z-index":"90"}})]),e("th",{staticClass:"ui-resizable",staticStyle:{width:"156px","min-width":"156px","max-width":"156px"},attrs:{id:"th-PURCHASEDATE"}},[e("span",{staticStyle:{"min-width":"138px"}},[t._v("Purchase Date")]),e("div",{staticClass:"sizer",attrs:{id:"th-PURCHASEDATE-sizer"}}),e("div",{staticClass:"ui-resizable-handle ui-resizable-e",staticStyle:{"z-index":"90"}})]),e("th",{staticClass:"ui-resizable",staticStyle:{width:"168px","min-width":"168px","max-width":"168px"},attrs:{id:"th-INVOICENUMBER"}},[e("span",{staticStyle:{"min-width":"150px"}},[t._v("Invoice Number")]),e("div",{staticClass:"sizer",attrs:{id:"th-INVOICENUMBER-sizer"}}),e("div",{staticClass:"ui-resizable-handle ui-resizable-e",staticStyle:{"z-index":"90"}})]),e("th",{staticClass:"ui-resizable",staticStyle:{width:"144px","min-width":"144px","max-width":"144px"},attrs:{id:"th-INVOICEDATE"}},[e("span",{staticStyle:{"min-width":"126px"}},[t._v("Invoice Date")]),e("div",{staticClass:"sizer",attrs:{id:"th-INVOICEDATE-sizer"}}),e("div",{staticClass:"ui-resizable-handle ui-resizable-e",staticStyle:{"z-index":"90"}})]),e("th",{staticClass:"ui-resizable",staticStyle:{width:"180px","min-width":"180px","max-width":"180px"},attrs:{id:"th-NAMEOFINSURER"}},[e("span",{staticStyle:{"min-width":"162px"}},[t._v("Name of Insurer")]),e("div",{staticClass:"sizer",attrs:{id:"th-NAMEOFINSURER-sizer"}}),e("div",{staticClass:"ui-resizable-handle ui-resizable-e",staticStyle:{"z-index":"90"}})]),e("th",{staticClass:"ui-resizable",staticStyle:{width:"240px","min-width":"240px","max-width":"240px"},attrs:{id:"th-INSURANCEVALIDUPTO"}},[e("span",{staticStyle:{"min-width":"222px"}},[t._v("Insurance Valid Upto")]),e("div",{staticClass:"sizer",attrs:{id:"th-INSURANCEVALIDUPTO-sizer"}}),e("div",{staticClass:"ui-resizable-handle ui-resizable-e",staticStyle:{"z-index":"90"}})]),e("th",{staticClass:"ui-resizable",staticStyle:{width:"204px","min-width":"204px","max-width":"204px"},attrs:{id:"th-WARRANTYDURATION"}},[e("span",{staticStyle:{"min-width":"186px"}},[t._v("Warranty Duration")]),e("div",{staticClass:"sizer",attrs:{id:"th-WARRANTYDURATION-sizer"}}),e("div",{staticClass:"ui-resizable-handle ui-resizable-e",staticStyle:{"z-index":"90"}})]),e("th",{staticClass:"ui-resizable",staticStyle:{width:"204px","min-width":"204px","max-width":"204px"},attrs:{id:"th-DEPRECIATIONRULE"}},[e("span",{staticStyle:{"min-width":"186px"}},[t._v("Depreciation Rule")]),e("div",{staticClass:"sizer",attrs:{id:"th-DEPRECIATIONRULE-sizer"}}),e("div",{staticClass:"ui-resizable-handle ui-resizable-e",staticStyle:{"z-index":"90"}})]),e("th",{staticClass:"ui-resizable",staticStyle:{width:"144px","min-width":"144px","max-width":"144px"},attrs:{id:"th-SALVAGECOST"}},[e("span",{staticStyle:{"min-width":"126px"}},[t._v("Salvage Cost")]),e("div",{staticClass:"sizer",attrs:{id:"th-SALVAGECOST-sizer"}}),e("div",{staticClass:"ui-resizable-handle ui-resizable-e",staticStyle:{"z-index":"90"}})]),e("th",{staticClass:"ui-resizable",staticStyle:{width:"156px","min-width":"156px","max-width":"156px"},attrs:{id:"th-SERIALNUMBER"}},[e("span",{staticStyle:{"min-width":"138px"}},[t._v("Serial Number")]),e("div",{staticClass:"sizer",attrs:{id:"th-SERIALNUMBER-sizer"}}),e("div",{staticClass:"ui-resizable-handle ui-resizable-e",staticStyle:{"z-index":"90"}})]),e("th",{staticClass:"ui-resizable",staticStyle:{width:"85px","min-width":"85px","max-width":"85px"},attrs:{id:"th-BARCODE"}},[e("span",{staticStyle:{"min-width":"67px"}},[t._v("Barcode")]),e("div",{staticClass:"sizer",attrs:{id:"th-BARCODE-sizer"}}),e("div",{staticClass:"ui-resizable-handle ui-resizable-e",staticStyle:{"z-index":"90"}})])])]),e("tbody",t._l(t.Xdata,(function(a,i){return e("tr",{key:i},[e("td",[e("Field",{attrs:{name:"ProductType"+i,rules:{required:!0}},scopedSlots:t._u([{key:"default",fn:function({errors:s}){return[e("select",{directives:[{name:"model",rawName:"v-model",value:a.ItemTypeID,expression:"item.ItemTypeID"}],class:{"form-control":!0,"is-invalid":s[0]},attrs:{name:"ProductType"+i},on:{change:function(e){var i=Array.prototype.filter.call(e.target.options,(function(t){return t.selected})).map((function(t){var e="_value"in t?t._value:t.value;return e}));t.$set(a,"ItemTypeID",e.target.multiple?i:i[0])}}},[e("option",{attrs:{value:""}},[t._v("Select")]),t._l(t.AssetType,(function(a,i){return e("option",{key:i,domProps:{value:a.ASSETID}},[t._v(t._s(a.ASSETTYPE))])}))],2)]}}],null,!0)})],1),e("td",[e("Field",{attrs:{name:"Status"+i,rules:{required:!0}},scopedSlots:t._u([{key:"default",fn:function({errors:s}){return[e("select",{directives:[{name:"model",rawName:"v-model",value:a.StatusID,expression:"item.StatusID"}],class:{"form-control":!0,"is-invalid":s[0]},attrs:{name:"Status"+i},on:{change:function(e){var i=Array.prototype.filter.call(e.target.options,(function(t){return t.selected})).map((function(t){var e="_value"in t?t._value:t.value;return e}));t.$set(a,"StatusID",e.target.multiple?i:i[0])}}},[e("option",{attrs:{value:""}},[t._v("Select")]),t._l(t.StatusListData,(function(a,i){return e("option",{key:i,domProps:{value:a.value}},[t._v(t._s(a.name))])}))],2)]}}],null,!0)})],1),e("td",[e("Field",{attrs:{name:"ProductName"+i,rules:{required:!0}},scopedSlots:t._u([{key:"default",fn:function({errors:s}){return[e("input",{directives:[{name:"model",rawName:"v-model",value:a.Item_Name,expression:"item.Item_Name"}],class:{"form-control":!0,"is-invalid":s[0]},attrs:{type:"text",name:"ProductName"+i},domProps:{value:a.Item_Name},on:{input:function(e){e.target.composing||t.$set(a,"Item_Name",e.target.value)}}})]}}],null,!0)})],1),e("td",[e("input",{directives:[{name:"model",rawName:"v-model",value:a.ItemCode,expression:"item.ItemCode"}],staticClass:"form-control",attrs:{type:"text"},domProps:{value:a.ItemCode},on:{input:function(e){e.target.composing||t.$set(a,"ItemCode",e.target.value)}}})]),e("td",[e("Field",{attrs:{name:"BarcodeType"+i,rules:{required:!0}},scopedSlots:t._u([{key:"default",fn:function({errors:s}){return[e("select",{directives:[{name:"model",rawName:"v-model",value:a.Barcode_Type,expression:"item.Barcode_Type"}],class:{"form-control":!0,"is-invalid":s[0]},attrs:{name:"BarcodeType"+i},on:{change:function(e){var i=Array.prototype.filter.call(e.target.options,(function(t){return t.selected})).map((function(t){var e="_value"in t?t._value:t.value;return e}));t.$set(a,"Barcode_Type",e.target.multiple?i:i[0])}}},[e("option",{attrs:{value:""}},[t._v("Select")]),t._l(t.BarcodeType,(function(a,i){return e("option",{key:i,domProps:{value:1==a.BARCODE_TYPE_ID?"Barcode":"QR"}},[t._v(" "+t._s(a.BARCODE_TYPE))])}))],2)]}}],null,!0)})],1),e("td",[e("input",{directives:[{name:"model",rawName:"v-model",value:a.Description,expression:"item.Description"}],staticClass:"form-control",attrs:{type:"text"},domProps:{value:a.Description},on:{input:function(e){e.target.composing||t.$set(a,"Description",e.target.value)}}})]),e("td",[e("select",{directives:[{name:"model",rawName:"v-model",value:a.CalibrationValue,expression:"item.CalibrationValue"}],staticClass:"form-control",on:{change:function(e){var i=Array.prototype.filter.call(e.target.options,(function(t){return t.selected})).map((function(t){var e="_value"in t?t._value:t.value;return e}));t.$set(a,"CalibrationValue",e.target.multiple?i:i[0])}}},[e("option",{attrs:{value:""}},[t._v("Select")]),t._l(t.CalibrationData,(function(a,i){return e("option",{key:i,domProps:{value:a.value}},[t._v(t._s(a.name))])}))],2)]),e("td",[e("select",{directives:[{name:"model",rawName:"v-model",value:a.AuditValue,expression:"item.AuditValue"}],staticClass:"form-control",on:{change:function(e){var i=Array.prototype.filter.call(e.target.options,(function(t){return t.selected})).map((function(t){var e="_value"in t?t._value:t.value;return e}));t.$set(a,"AuditValue",e.target.multiple?i:i[0])}}},[e("option",{attrs:{value:""}},[t._v("Select")]),t._l(t.AuditData,(function(a,i){return e("option",{key:i,domProps:{value:a.value}},[t._v(t._s(a.name))])}))],2)]),e("td",[e("select",{directives:[{name:"model",rawName:"v-model",value:a.ImageCaptureValue,expression:"item.ImageCaptureValue"}],staticClass:"form-control",on:{change:function(e){var i=Array.prototype.filter.call(e.target.options,(function(t){return t.selected})).map((function(t){var e="_value"in t?t._value:t.value;return e}));t.$set(a,"ImageCaptureValue",e.target.multiple?i:i[0])}}},[e("option",{attrs:{value:""}},[t._v("Select")]),t._l(t.ImageCaptureData,(function(a,i){return e("option",{key:i,domProps:{value:a.value}},[t._v(t._s(a.name))])}))],2)]),e("td",[e("div",{staticClass:"custom-control custom-checkbox"},[e("input",{directives:[{name:"model",rawName:"v-model",value:a.IsUnique,expression:"item.IsUnique"}],ref:"theCheckbox",refInFor:!0,staticClass:"custom-control-input",attrs:{for:"chk_"+i,"data-catalogid":a.IsUnique,type:"checkbox",id:"chk_"+i},domProps:{checked:Array.isArray(a.IsUnique)?t._i(a.IsUnique,null)>-1:a.IsUnique},on:{click:t.handleClick,change:function(e){var i=a.IsUnique,s=e.target,r=!!s.checked;if(Array.isArray(i)){var n=null,l=t._i(i,n);s.checked?l<0&&t.$set(a,"IsUnique",i.concat([n])):l>-1&&t.$set(a,"IsUnique",i.slice(0,l).concat(i.slice(l+1)))}else t.$set(a,"IsUnique",r)}}}),e("label",{staticClass:"custom-control-label universal-custom-control-label pt-1",attrs:{for:"chk_"+i}})])]),e("Field",{attrs:{name:"Location"+i,rules:{required:!0}},scopedSlots:t._u([{key:"default",fn:function({errors:s}){return[e("tree-view",{class:{"form-control":!0,"is-invalid":s[0]},attrs:{options:t.options,"show-count":!0,placeholder:"Select Location",name:"Location"+i},model:{value:a.LocationID,callback:function(e){t.$set(a,"LocationID",e)},expression:"item.LocationID"}})]}}],null,!0)}),e("td",[e("Field",{attrs:{name:"Quantity"+i,rules:{required:!0}},scopedSlots:t._u([{key:"default",fn:function({errors:s}){return[e("input",{directives:[{name:"model",rawName:"v-model",value:a.Quantity,expression:"item.Quantity"}],class:{"form-control":!0,"is-invalid":s[0]},attrs:{type:"text",name:"Quantity"+i},domProps:{value:a.Quantity},on:{input:function(e){e.target.composing||t.$set(a,"Quantity",e.target.value)}}})]}}],null,!0)})],1),e("td",[e("input",{directives:[{name:"model",rawName:"v-model",value:a.Model,expression:"item.Model"}],staticClass:"form-control",attrs:{type:"text"},domProps:{value:a.Model},on:{input:function(e){e.target.composing||t.$set(a,"Model",e.target.value)}}})]),e("td",[e("input",{directives:[{name:"model",rawName:"v-model",value:a.Manufacturer,expression:"item.Manufacturer"}],staticClass:"form-control",attrs:{type:"text"},domProps:{value:a.Manufacturer},on:{input:function(e){e.target.composing||t.$set(a,"Manufacturer",e.target.value)}}})]),e("td",[e("input",{directives:[{name:"model",rawName:"v-model",value:a.Vendor,expression:"item.Vendor"}],staticClass:"form-control",attrs:{type:"text"},domProps:{value:a.Vendor},on:{input:function(e){e.target.composing||t.$set(a,"Vendor",e.target.value)}}})]),e("td",[e("input",{directives:[{name:"model",rawName:"v-model",value:a.AssetCost,expression:"item.AssetCost"}],staticClass:"form-control",attrs:{type:"text"},domProps:{value:a.AssetCost},on:{input:function(e){e.target.composing||t.$set(a,"AssetCost",e.target.value)}}})]),e("td",[e("input",{directives:[{name:"model",rawName:"v-model",value:a.PurchaseOrder,expression:"item.PurchaseOrder"}],staticClass:"form-control",attrs:{type:"text"},domProps:{value:a.PurchaseOrder},on:{input:function(e){e.target.composing||t.$set(a,"PurchaseOrder",e.target.value)}}})]),e("td",[e("v-date-picker",{staticClass:"timedate input-group",attrs:{popover:t.popover,name:a.PurchaseDate,"minute-increment":5},scopedSlots:t._u([{key:"default",fn:function({inputValue:t,togglePopover:i}){return[e("input",{class:{"form-control":!0},attrs:{placeholder:"M/D/YYYY h:mm A"},domProps:{value:a.PurchaseDate},on:{click:function(t){return i()}}}),e("div",{staticClass:"input-group-append",on:{click:function(t){return i()}}},[e("span",{staticClass:"input-group-text"},[e("em",{staticClass:"fa fa-calendar"})])])]}}],null,!0),model:{value:a.PurchaseDate,callback:function(e){t.$set(a,"PurchaseDate",e)},expression:"item.PurchaseDate"}})],1),e("td",[e("input",{directives:[{name:"model",rawName:"v-model",value:a.InvoiceNumber,expression:"item.InvoiceNumber"}],staticClass:"form-control",attrs:{type:"text"},domProps:{value:a.InvoiceNumber},on:{input:function(e){e.target.composing||t.$set(a,"InvoiceNumber",e.target.value)}}})]),e("td",[e("v-date-picker",{staticClass:"timedate input-group",attrs:{popover:t.popover,name:a.InvoiceDate,"minute-increment":5},scopedSlots:t._u([{key:"default",fn:function({inputValue:t,togglePopover:i}){return[e("input",{class:{"form-control":!0},attrs:{placeholder:"M/D/YYYY h:mm A"},domProps:{value:a.InvoiceDate},on:{click:function(t){return i()}}}),e("div",{staticClass:"input-group-append",on:{click:function(t){return i()}}},[e("span",{staticClass:"input-group-text"},[e("em",{staticClass:"fa fa-calendar"})])])]}}],null,!0),model:{value:a.InvoiceDate,callback:function(e){t.$set(a,"InvoiceDate",e)},expression:"item.InvoiceDate"}})],1),e("td",[e("input",{directives:[{name:"model",rawName:"v-model",value:a.InsurerName,expression:"item.InsurerName"}],staticClass:"form-control",attrs:{type:"text"},domProps:{value:a.InsurerName},on:{input:function(e){e.target.composing||t.$set(a,"InsurerName",e.target.value)}}})]),e("td",[e("v-date-picker",{staticClass:"timedate input-group",attrs:{popover:t.popover,name:a.InsuranceTo,"minute-increment":5},scopedSlots:t._u([{key:"default",fn:function({inputValue:t,togglePopover:i}){return[e("input",{class:{"form-control":!0},attrs:{placeholder:"M/D/YYYY h:mm A"},domProps:{value:a.InsuranceTo},on:{click:function(t){return i()}}}),e("div",{staticClass:"input-group-append",on:{click:function(t){return i()}}},[e("span",{staticClass:"input-group-text"},[e("em",{staticClass:"fa fa-calendar"})])])]}}],null,!0),model:{value:a.InsuranceTo,callback:function(e){t.$set(a,"InsuranceTo",e)},expression:"item.InsuranceTo"}})],1),e("td",[e("v-date-picker",{staticClass:"timedate input-group",attrs:{popover:t.popover,name:a.WarrantyDuration,"minute-increment":5},scopedSlots:t._u([{key:"default",fn:function({inputValue:t,togglePopover:i}){return[e("input",{class:{"form-control":!0},attrs:{placeholder:"M/D/YYYY h:mm A"},domProps:{value:a.WarrantyDuration},on:{click:function(t){return i()}}}),e("div",{staticClass:"input-group-append",on:{click:function(t){return i()}}},[e("span",{staticClass:"input-group-text"},[e("em",{staticClass:"fa fa-calendar"})])])]}}],null,!0),model:{value:a.WarrantyDuration,callback:function(e){t.$set(a,"WarrantyDuration",e)},expression:"item.WarrantyDuration"}})],1),e("td",[e("select",{directives:[{name:"model",rawName:"v-model",value:a.DepreciationRule,expression:"item.DepreciationRule"}],staticClass:"form-control",on:{change:function(e){var i=Array.prototype.filter.call(e.target.options,(function(t){return t.selected})).map((function(t){var e="_value"in t?t._value:t.value;return e}));t.$set(a,"DepreciationRule",e.target.multiple?i:i[0])}}},[e("option",{attrs:{value:""}},[t._v("Select")]),t._l(t.dData,(function(a,i){return e("option",{key:i,domProps:{value:a.value}},[t._v(" "+t._s(a.name))])}))],2)]),e("td",[e("input",{directives:[{name:"model",rawName:"v-model",value:a.SalvageCost,expression:"item.SalvageCost"}],staticClass:"form-control",attrs:{type:"text"},domProps:{value:a.SalvageCost},on:{input:function(e){e.target.composing||t.$set(a,"SalvageCost",e.target.value)}}})]),e("td",[e("input",{directives:[{name:"model",rawName:"v-model",value:a.SerialNumber,expression:"item.SerialNumber"}],staticClass:"form-control",attrs:{type:"text"},domProps:{value:a.SerialNumber},on:{input:function(e){e.target.composing||t.$set(a,"SerialNumber",e.target.value)}}})]),e("td",[e("input",{directives:[{name:"model",rawName:"v-model",value:a.BarcodeNumber,expression:"item.BarcodeNumber"}],staticClass:"form-control",attrs:{type:"text"},domProps:{value:a.BarcodeNumber},on:{input:function(e){e.target.composing||t.$set(a,"BarcodeNumber",e.target.value)}}})])],1)})),0)]),"0"==t.Xdata.length?e("div",{staticClass:"text-danger text-center no-record",attrs:{colspan:"10"}},[t._v(" "+t._s(t.$t("NoRecordfound"))+" ")]):t._e()])],1),e("div",{staticClass:"row flex-row-reverse"},[e("div",{staticClass:"col-lg-6 text-right"},[e("div",{staticClass:"search-btm-btn"},[e("a",{staticClass:"btn btn-success formbtn widthhalf",attrs:{id:"aSubmit",href:"javascript:;",title:"","data-toggle-tooltip":"tooltip","data-original-title":"Import from excel file"},on:{click:function(e){return t.SubmitData()}}},[e("i",{staticClass:"fa fa-save pr-2"}),t._v("Submit")]),t._v("   "),t._m(0)])])])])])],1)}),n=[function(){var t=this,e=t._self._c;return e("a",{staticClass:"btn btn-danger formbtn my-2",attrs:{title:"",href:"/AssetCatalog/Index","data-toggle-tooltip":"tooltip","data-original-title":"Cancel"}},[e("i",{staticClass:"fa fa-close mr-2"}),t._v("Cancel")])}],l=a("1115"),o=a("ca17"),c=a.n(o),d=(a("542c"),{components:{"tree-view":c.a},props:{filepath:{type:String}},data(){return{Xdata:[],AssetType:[],StatusListData:[],BarcodeType:[],AuditData:[],ImageCaptureData:[],AssetFrequencyList:[],CalibrationData:[],LocationValue:null,options:[],dData:[],UserId:"",ExcelListData:[],ProductType:[],StatusData:[],BarcodeData:[],AuditRecord:[],ImageCaptureRecord:[],CalibrationRecord:[],DepreciationRecord:[],LocationData:[]}},async created(){this.UserId=this.GetUserInfo.ID,await this.GetAssetTypeCustom(),await this.ImportProduct(),await this.GetBarcodeType(),await this.GetStatusList(),await this.GetAssetFrequency(),await this.GetLocationByCompanyId(),await this.GetDepreciationRule(),await this.GetLocationByCompanyId1()},methods:{SubmitData(){var t=this;0!=t.Xdata.length?t.$refs.Productimport.validate().then(e=>{if(e){t.Xdata.forEach((e,a)=>{t.ProductType=t.AssetType.find(t=>t.ASSETID===e.ItemTypeID),t.StatusData=t.StatusListData.find(t=>t.value===e.StatusID),t.BarcodeData=t.BarcodeType.find(t=>t.BARCODE_TYPE===e.Barcode_Type),t.AuditRecord=t.AuditData.find(t=>t.value===e.AuditValue),t.ImageCaptureRecord=t.ImageCaptureData.find(t=>t.value===e.ImageCaptureValue),t.CalibrationRecord=t.CalibrationData.find(t=>t.value===e.CalibrationValue),t.DepreciationRecord=t.dData.find(t=>t.value===e.DepreciationRule),t.LocationRecord=t.LocationData.find(t=>t.value==e.LocationID);const i={ItemTypeName:t.ProductType.ASSETTYPE,Item_type_id:parseInt(t.ProductType.ASSETID),Item_type:parseInt(t.ProductType.ASSETID),Item_Name:e.Item_Name,Status:t.StatusData.name,ItemCode:e.ItemCode,Description:e.Description,Scanning_Media_Type:t.BarcodeData.BARCODE_TYPE_ID,ScanningMediaTypeID:parseInt(e.ScanningMediaTypeID),standard:e.standard,StandardID:parseInt(e.StandardID),Audit:"undefined"==typeof t.AuditRecord?"":t.AuditRecord.name,AuditValue:"undefined"==typeof t.AuditRecord?0:t.AuditRecord.value,ImageCapture:"undefined"==typeof t.ImageCaptureRecord?"":t.ImageCaptureRecord.name,ImageCaptureValue:"undefined"==typeof t.ImageCaptureRecord?0:t.ImageCaptureRecord.value,Calibration:"undefined"==typeof t.CalibrationRecord?"":t.CalibrationRecord.name,CalibrationValue:"undefined"==typeof t.CalibrationRecord?0:t.CalibrationRecord.value,IsUnique:e.IsUnique,LocationName:void 0==t.LocationRecord.name?"":t.LocationRecord.name,LocationID:void 0==t.LocationRecord.name?0:parseInt(t.LocationRecord.value),Quantity:parseInt(e.Quantity),Model:e.Model,Manufacturer:e.Manufacturer,Vendor:e.Vendor,PurchaseOrder:e.PurchaseOrder,PurchaseDate:e.PurchaseDate,WarrantyDuration:e.WarrantyDuration,SalvageCost:parseInt(e.SalvageCost),CompanyID:parseInt(e.CompanyID),UserID:t.UserId,batchid:e.batchid,StatusID:parseInt(t.StatusData.value),AssetCost:parseInt(e.AssetCost),InvoiceNumber:e.InvoiceNumber,InvoiceDate:e.InvoiceDate,insurer_name:e.InsurerName,InsuranceTo:e.InsuranceTo,DepreciationRule:void 0==t.DepreciationRecord?"":t.DepreciationRecord.name,SerialNumber:e.SerialNumber,BarcodeNumber:e.BarcodeNumber};t.ExcelListData.push(i)});var a=JSON.stringify(t.ExcelListData);l["a"].BulkUploadPost(a).then(e=>{var a=e.data.msg;t.ShowAlert(a,"success",!0,t.$t("Alert")),t.isLoading=!1,t.$router.push({path:"/AssetCatalog/Index"})})}else t.ShowAlert(t.$t("ValidationHighlights"),"failure",t.$t("Alert")),t.isLoading=!1}):(t.ShowAlert(t.$t("ValidationHighlights"),"failure",t.$t("Alert")),t.isLoading=!1)},async GetDepreciationRule(){var t=this;t.isLoading=!0;var e={};await l["a"].GetDepreciationRuleList().then(a=>{t.DepreciationData=JSON.parse(a.data),t.DepreciationData.forEach((a,i)=>{e={name:a.DEPRECIATION_RULE_NAME,value:a.DEPRECIATION_RULE_ID},t.dData.push(e)})}),t.isLoading=!1},GetLocationByCompanyId1:async function(){var t=this,e="reqForm=Asset";await l["a"].GetLocationByCompanyId(e).then((function(e){e.data;let a={};JSON.parse(e.data).data.forEach(e=>{a={name:e.LOCATION_NAME,value:e.COMPANY_LOCATION_ID},t.LocationData.push(a)})}))},GetLocationByCompanyId:async function(){var t=this,e="reqForm=assetassignment";await l["a"].GetLocationByuserId(e).then(e=>{t.FindalLocationArray=[],e.data.data.forEach(a=>{var i=t.FindalLocationArray.filter((function(t){return t.COMPANY_LOCATION_ID==a.COMPANY_LOCATION_ID}));if(0==i.length&&null==a.PARENT_LOCATION_ID){let i=a.COMPANY_LOCATION_ID,s=t.getChildLocation(i,a,e.data.data);t.FindalLocationArray.push(s)}}),t.options=t.FindalLocationArray})},getChildLocation:function(t,e,a){let i=this,s={};s={id:e.COMPANY_LOCATION_ID,label:e.LOCATION_NAME};let r=s;var n=a.filter((function(e){return e.PARENT_LOCATION_ID==t}));let l=[];return n.forEach(t=>{let e=t.COMPANY_LOCATION_ID;var r=l.filter((function(e){return e.COMPANY_LOCATION_ID==t.COMPANY_LOCATION_ID}));if(0==r.length){var n=a.filter((function(t){return t.PARENT_LOCATION_ID==e}));if(null!=n&&n.length>0){let s=i.getChildLocation(e,t,a);l.push(s)}else s={id:""+t.COMPANY_LOCATION_ID,label:""+t.LOCATION_NAME},l.push(s)}}),r.children=l,r},onCancel:function(){this.$router.push({name:"ProductListing"})},ImportProduct:function(){var t=this;t.isLoading=!0;var e=`filepath=${t.filepath}&typeName='Product'`;l["a"].BulkUpload(e).then(e=>{null!=e.data?(t.Xdata=e.data,t.Xdata.forEach((e,a)=>{0!=e.LocationID&&0!=e.ItemTypeID||(t.count=1,e.LocationID=null,e.ItemTypeID="",t.ShowAlert(t.$t("LocationNotExistMsg"),"failure",t.$t("Alert")))}),t.isLoading=!1):(t.ShowAlert(t.$t("InValidFileUpload"),"warning",t.$t("Alert")),t.isLoading=!1)})},async GetAssetFrequency(){var t=this;let e=[{name:"Annually",value:"annual"},{name:"Half yearly",value:"halfyear"},{name:"Quarterly",value:"quarterly"},{name:"Monthly",value:"month"},{name:"Bi-Weekly",value:"Bi-Weekly"},{name:"Weekly",value:"week"},{name:"Daily",value:"daily"}];t.AssetFrequencyList.push(e),await t.AssetFrequencyList[0].forEach((e,a)=>{t.AuditData.push({name:e.name,value:e.value}),t.ImageCaptureData.push({name:e.name,value:e.value}),t.CalibrationData.push({name:e.name,value:e.value})})},GetBarcodeType(){var t=this;t.isLoading=!0;var e="BarcodeTypeId=";l["a"].GetBarcodetype(e).then(e=>{t.BarcodeType=JSON.parse(e.data.result),t.isLoading=!1})},GetStatusList(){var t=this;t.isLoading=!0;var e="langCode=en&statusType=AssetManagement&hasglobal=true";l["a"].GetStatusList(e).then(e=>{var a=JSON.parse(e.data);a.forEach((e,a)=>{var i={value:e.STATUS_ID,name:e.STATUS};t.StatusListData.push(i)}),t.isLoading=!1})},GetAssetTypeCustom:function(){var t=this;t.isLoading=!0;var e="type=ITEMCODE&issueTo=&locationId=";l["a"].GetAssetTypeCustom(e).then(e=>{t.AssetType=JSON.parse(e.data),t.isLoading=!1})},handleClick(){this.$refs.theCheckbox[0].checked?this.IsChecked=!0:this.IsChecked=!1}}}),u=d,p=(a("6023"),a("2877")),m=Object(p["a"])(u,r,n,!1,null,"741fe449",null),v=m.exports,h={components:{ImportProduct:v},data:function(){return{isLoading:!1,file:null,filepath:"",excelFileName:null,reqfrom:null,expListing:null,trips:[],categories:[],projects:[],currencies:[],tasks:[],expLimitJsonBack:[],check_EXPENSE_LIMIT:!1,userDateFormat:null,files:new FormData,value:null,attachmentName:"",ShowImportProduct:!1}},methods:{BackTolist:function(){this.$router.push({name:"ProductListing"})},onCancel:function(){this.$router.push({name:"ProductListing"})},setFile:function(t){this.attachmentName=t.target.files[0].name,this.file=t.target.files[0],this.excelFileName=t.target.files[0].name},Clear:function(){this.attachmentName=""},UploadProductSampleFile(){var t=this;if(t.$emit("ImportProduct"),""!=$("#flAvatar").val()){var e=$("#flAvatar").val().split("\\").pop(),a=".xls,.xlsx",i=e.replace(/^.*\./,"");a.includes(i)?t.confirmR(t.$t("bulkImportConfirmationMsg"),!0,t.$t("Delete")+"  "+t.$t("REPORT_ID"),(function(){const e=new FormData;e.append("file",t.file),t.isLoading=!0,l["a"].ImportProductSamplePost(e).then((function(e){t.isLoading=!1;var a=e.data;0==a.Status?(t.filepath=a.Msg,t.ShowImportProduct=""!=t.filepath):t.ShowAlert(a.Msg,"warning",!0,t.$t("Alert"))})),t.isLoading=!1})):t.ShowAlert(t.$t("InvalidSampleFileUploadMsg",[e,a]),"warning",!0,t.$t("Alert"))}else t.ShowAlert(t.$t("PleaseUploadExcelFile"),"warning",!0,t.$t("Alert"))}}},C=h,f=Object(p["a"])(C,i,s,!1,null,null,null);e["default"]=f.exports},6023:function(t,e,a){"use strict";a("96a2")},"6c52":function(t,e,a){var i=a("24fb");e=i(!1),e.push([t.i,".listing .table td.p-location[data-v-741fe449]:not(.overflow-visible):not(.mobile-action):not(.details-control){overflow:visible!important}",""]),t.exports=e},"96a2":function(t,e,a){var i=a("6c52");i.__esModule&&(i=i.default),"string"===typeof i&&(i=[[t.i,i,""]]),i.locals&&(t.exports=i.locals);var s=a("499e").default;s("a2741968",i,!0,{sourceMap:!1,shadowMode:!1})}}]);
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["chunk-a41644bc"],{
+
+/***/ "1786":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"40274a44-vue-loader-template"}!./node_modules/cache-loader/dist/cjs.js??ref--13-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader/lib??vue-loader-options!./src/views/AssetCatalog/ImportAssetItem.vue?vue&type=template&id=7fbac769&
+var render = function render() {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c('section', {
+    staticClass: "main-content",
+    attrs: {
+      "id": "main-content"
+    }
+  }, [_c('loader', {
+    attrs: {
+      "is-visible": _vm.isLoading
+    }
+  }), _c('section', {
+    staticClass: "page-action"
+  }, [_c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "col-md-12 padding-t_8"
+  }, [_c('div', {
+    staticClass: "theme-primary partition-full"
+  }, [_c('span', {
+    staticClass: "p-name text-white"
+  }, [_vm._v(_vm._s(_vm.$t('Import Product')))]), _c('span', {
+    staticClass: "p-actions float-right"
+  }, [_c('a', {
+    staticClass: "p-action-btn text-white",
+    attrs: {
+      "title": "BacktoList"
+    },
+    on: {
+      "click": _vm.BackTolist
+    }
+  }, [_c('em', {
+    staticClass: "fa fa-angle-double-left pr-2"
+  }), _c('br'), _c('span', [_vm._v(_vm._s(_vm.$t('BacktoList')))])])])])])])]), _c('div', {
+    staticClass: "user-guide-custom d-none"
+  }, [_vm._v(" " + _vm._s(_vm.$t('User_Guide_ProductSampleImport')) + " ")]), _c('div', {
+    staticClass: "border p-3"
+  }, [_c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "col-lg-4"
+  }, [_c('div', {
+    staticClass: "form-group"
+  }, [_c('label', [_vm._v(_vm._s(_vm.$t('Download Product Sample File')) + ":")]), _c('div', {
+    staticClass: "input-group mb-3"
+  }, [_c('div', {
+    staticClass: "form-control"
+  }, [_c('i', {
+    staticClass: "fa fa-file-excel-o pr-1 text-success"
+  }), _vm._v(_vm._s(_vm.$t('ProductSample')) + ".xls ")]), _vm._m(0)])])]), _c('div', {
+    staticClass: "col-lg-4"
+  }, [_c('div', {
+    staticClass: "form-group"
+  }, [_c('label', [_vm._v(_vm._s(_vm.$t('Upload a File')) + ":"), _c('span', {
+    staticClass: "text-danger"
+  }, [_vm._v("*")])]), _c('div', {
+    staticClass: "input-group"
+  }, [_c('div', {
+    staticClass: "custom-file ProductSampleFile"
+  }, [_c('input', {
+    staticStyle: {
+      "position": "absolute",
+      "clip": "rect(0px, 0px, 0px, 0px)"
+    },
+    attrs: {
+      "type": "file",
+      "name": "FileSrc",
+      "id": "flAvatar",
+      "multiple": "true",
+      "tabindex": "-1"
+    },
+    on: {
+      "change": function ($event) {
+        return _vm.setFile($event);
+      }
+    }
+  }), _c('div', {
+    staticClass: "bootstrap-filestyle input-group"
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.attachmentName,
+      expression: "attachmentName"
+    }],
+    staticClass: "form-control disabled",
+    attrs: {
+      "type": "text",
+      "disabled": ""
+    },
+    domProps: {
+      "value": _vm.attachmentName
+    },
+    on: {
+      "input": function ($event) {
+        if ($event.target.composing) return;
+        _vm.attachmentName = $event.target.value;
+      }
+    }
+  }), _c('div', {
+    staticClass: "input-group-append",
+    staticStyle: {
+      "cursor": "pointer"
+    }
+  }, [_c('span', {
+    staticClass: "group-span-filestyle input-group-btn input-group-text bg-white",
+    attrs: {
+      "tabindex": "0"
+    }
+  }, [_c('label', {
+    staticClass: "mb-0 font-weight-normal",
+    attrs: {
+      "title": "Click here to select a file.",
+      "for": "flAvatar"
+    }
+  }, [_vm._v(_vm._s(_vm.$t('FileControlText')))])]), _c('span', {
+    staticClass: "input-group-text border-0 bg-transparent p-0 pl-2"
+  }, [_c('a', {
+    staticClass: "round-icon-small btn-danger-light",
+    attrs: {
+      "href": "javascript:;",
+      "title": "Clear"
+    },
+    on: {
+      "click": _vm.Clear
+    }
+  }, [_c('i', {
+    staticClass: "fa fa-undo"
+  })])])])])])])])])]), _c('div', {
+    staticClass: "row flex-row-reverse"
+  }, [_c('div', {
+    staticClass: "col-lg-6 text-right"
+  }, [_c('a', {
+    staticClass: "btn btn-info formbtn mr-1",
+    attrs: {
+      "href": "javascript:void(0);",
+      "title": _vm.$t('ImportFromExcelFile')
+    },
+    on: {
+      "click": function ($event) {
+        return _vm.UploadProductSampleFile();
+      }
+    }
+  }, [_c('i', {
+    staticClass: "fa fa-download pr-2"
+  }), _vm._v(_vm._s(_vm.$t('Import Product Sample File')))]), _c('a', {
+    staticClass: "btn btn-danger formbtn my-2",
+    attrs: {
+      "title": "",
+      "data-toggle-tooltip": "tooltip",
+      "data-original-title": "Cancel"
+    },
+    on: {
+      "click": function ($event) {
+        return _vm.onCancel();
+      }
+    }
+  }, [_c('i', {
+    staticClass: "fa fa-close mr-2"
+  }), _vm._v("Cancel")])])])]), _vm.ShowImportProduct ? _c('ImportProduct', {
+    ref: "myChild",
+    attrs: {
+      "filepath": _vm.filepath
+    }
+  }) : _vm._e()], 1);
+};
+var staticRenderFns = [function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c('div', {
+    staticClass: "input-group-append downloadProductSample"
+  }, [_c('span', {
+    staticClass: "input-group-text",
+    attrs: {
+      "id": "basic-addon2"
+    }
+  }, [_c('a', {
+    attrs: {
+      "href": "https://cogniterblob.blob.core.windows.net/global/SampleFiles/sample-file-asset-product-import.xls",
+      "download": ""
+    }
+  }, [_c('i', {
+    staticClass: "fa fa-download text-primary"
+  })])])]);
+}];
+
+// CONCATENATED MODULE: ./src/views/AssetCatalog/ImportAssetItem.vue?vue&type=template&id=7fbac769&
+
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.push.js
+var es_array_push = __webpack_require__("14d9");
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"40274a44-vue-loader-template"}!./node_modules/cache-loader/dist/cjs.js??ref--13-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Modal/ImportProduct.vue?vue&type=template&id=741fe449&scoped=true&
+var ImportProductvue_type_template_id_741fe449_scoped_true_render = function render() {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c('section', [_c('loader', {
+    attrs: {
+      "is-visible": _vm.isLoading
+    }
+  }), _c('div', {
+    staticClass: "listing mt-2"
+  }, [_c('div', {
+    staticClass: "col-lg-12 float-left px-0"
+  }, [_c('div', {
+    staticClass: "table-responsive"
+  }, [_c('Form', {
+    ref: "Productimport"
+  }, [_c('table', {
+    staticClass: "table table-bordered dt-responsive nowrap mt-0",
+    attrs: {
+      "id": "tblExpList"
+    }
+  }, [_c('thead', {
+    staticClass: "thead-bg"
+  }, [_c('tr', [_c('th', {
+    staticClass: "ui-resizable",
+    staticStyle: {
+      "width": "156px",
+      "min-width": "156px",
+      "max-width": "156px"
+    },
+    attrs: {
+      "id": "th-PRODUCTTYPE"
+    }
+  }, [_c('span', {
+    staticClass: "d-inline-block",
+    staticStyle: {
+      "min-width": "138px"
+    }
+  }, [_vm._v("Product Type"), _c('span', {
+    staticClass: "d-inline-block"
+  }, [_c('span', {
+    staticClass: "text-danger"
+  }, [_vm._v("*")])])]), _c('div', {
+    staticClass: "sizer",
+    attrs: {
+      "id": "th-PRODUCTTYPE-sizer"
+    }
+  }), _c('div', {
+    staticClass: "ui-resizable-handle ui-resizable-e",
+    staticStyle: {
+      "z-index": "90"
+    }
+  })]), _c('th', {
+    staticClass: "ui-resizable",
+    staticStyle: {
+      "width": "156px",
+      "min-width": "156px",
+      "max-width": "156px"
+    },
+    attrs: {
+      "id": "th-STATUS"
+    }
+  }, [_c('span', {
+    staticClass: "d-inline-block",
+    staticStyle: {
+      "min-width": "67px"
+    }
+  }, [_vm._v("Status"), _c('span', {
+    staticClass: "d-inline-block"
+  }, [_c('span', {
+    staticClass: "text-danger"
+  }, [_vm._v("*")])])]), _c('div', {
+    staticClass: "sizer",
+    attrs: {
+      "id": "th-STATUS-sizer"
+    }
+  }), _c('div', {
+    staticClass: "ui-resizable-handle ui-resizable-e",
+    staticStyle: {
+      "z-index": "90"
+    }
+  })]), _c('th', {
+    staticClass: "ui-resizable",
+    staticStyle: {
+      "width": "156px",
+      "min-width": "156px",
+      "max-width": "156px"
+    },
+    attrs: {
+      "id": "th-PRODUCTNAME"
+    }
+  }, [_c('span', {
+    staticClass: "d-inline-block",
+    staticStyle: {
+      "min-width": "138px"
+    }
+  }, [_vm._v("Product Name"), _c('span', {
+    staticClass: "d-inline-block"
+  }, [_c('span', {
+    staticClass: "text-danger"
+  }, [_vm._v("*")])])]), _c('div', {
+    staticClass: "sizer",
+    attrs: {
+      "id": "th-PRODUCTNAME-sizer"
+    }
+  }), _c('div', {
+    staticClass: "ui-resizable-handle ui-resizable-e",
+    staticStyle: {
+      "z-index": "90"
+    }
+  })]), _c('th', {
+    staticClass: "ui-resizable",
+    staticStyle: {
+      "width": "144px",
+      "min-width": "144px",
+      "max-width": "144px"
+    },
+    attrs: {
+      "id": "th-PRODUCTCODE"
+    }
+  }, [_c('span', {
+    staticStyle: {
+      "min-width": "126px"
+    }
+  }, [_vm._v("Product Code")]), _c('div', {
+    staticClass: "sizer",
+    attrs: {
+      "id": "th-PRODUCTCODE-sizer"
+    }
+  }), _c('div', {
+    staticClass: "ui-resizable-handle ui-resizable-e",
+    staticStyle: {
+      "z-index": "90"
+    }
+  })]), _c('th', {
+    staticClass: "ui-resizable",
+    staticStyle: {
+      "width": "156px",
+      "min-width": "156px",
+      "max-width": "156px"
+    },
+    attrs: {
+      "id": "th-BARCODETYPE"
+    }
+  }, [_c('span', {
+    staticClass: "d-inline-block",
+    staticStyle: {
+      "min-width": "138px"
+    }
+  }, [_vm._v("Barcode Type"), _c('span', {
+    staticClass: "d-inline-block"
+  }, [_c('span', {
+    staticClass: "text-danger"
+  }, [_vm._v("*")])])]), _c('div', {
+    staticClass: "sizer",
+    attrs: {
+      "id": "th-BARCODETYPE-sizer"
+    }
+  }), _c('div', {
+    staticClass: "ui-resizable-handle ui-resizable-e",
+    staticStyle: {
+      "z-index": "90"
+    }
+  })]), _c('th', {
+    staticClass: "ui-resizable",
+    staticStyle: {
+      "width": "320px",
+      "min-width": "320px",
+      "max-width": "320px"
+    },
+    attrs: {
+      "id": "th-DESCRIPTION"
+    }
+  }, [_c('span', {
+    staticStyle: {
+      "min-width": "114px"
+    }
+  }, [_vm._v("Description")]), _c('div', {
+    staticClass: "sizer",
+    attrs: {
+      "id": "th-DESCRIPTION-sizer"
+    }
+  }), _c('div', {
+    staticClass: "ui-resizable-handle ui-resizable-e",
+    staticStyle: {
+      "z-index": "90"
+    }
+  })]), _c('th', {
+    staticClass: "ui-resizable",
+    staticStyle: {
+      "width": "132px",
+      "min-width": "132px",
+      "max-width": "132px"
+    },
+    attrs: {
+      "id": "th-CALIBRATION"
+    }
+  }, [_c('span', {
+    staticStyle: {
+      "min-width": "114px"
+    }
+  }, [_vm._v("Calibration")]), _c('div', {
+    staticClass: "sizer",
+    attrs: {
+      "id": "th-CALIBRATION-sizer"
+    }
+  }), _c('div', {
+    staticClass: "ui-resizable-handle ui-resizable-e",
+    staticStyle: {
+      "z-index": "90"
+    }
+  })]), _c('th', {
+    staticClass: "ui-resizable",
+    staticStyle: {
+      "width": "156px",
+      "min-width": "156px",
+      "max-width": "156px"
+    },
+    attrs: {
+      "id": "th-AUDIT"
+    }
+  }, [_c('span', {
+    staticStyle: {
+      "min-width": "67px"
+    }
+  }, [_vm._v("Audit")]), _c('div', {
+    staticClass: "sizer",
+    attrs: {
+      "id": "th-AUDIT-sizer"
+    }
+  }), _c('div', {
+    staticClass: "ui-resizable-handle ui-resizable-e",
+    staticStyle: {
+      "z-index": "90"
+    }
+  })]), _c('th', {
+    staticClass: "ui-resizable",
+    staticStyle: {
+      "width": "156px",
+      "min-width": "156px",
+      "max-width": "156px"
+    },
+    attrs: {
+      "id": "th-IMAGECAPTURE"
+    }
+  }, [_c('span', {
+    staticStyle: {
+      "min-width": "138px"
+    }
+  }, [_vm._v("Image Capture")]), _c('div', {
+    staticClass: "sizer",
+    attrs: {
+      "id": "th-IMAGECAPTURE-sizer"
+    }
+  }), _c('div', {
+    staticClass: "ui-resizable-handle ui-resizable-e",
+    staticStyle: {
+      "z-index": "90"
+    }
+  })]), _c('th', {
+    staticClass: "ui-resizable",
+    staticStyle: {
+      "width": "108px",
+      "min-width": "108px",
+      "max-width": "108px"
+    },
+    attrs: {
+      "id": "th-ISUNIQUE"
+    }
+  }, [_c('span', {
+    staticStyle: {
+      "min-width": "90px"
+    }
+  }, [_vm._v("Is Unique")]), _c('div', {
+    staticClass: "sizer",
+    attrs: {
+      "id": "th-ISUNIQUE-sizer"
+    }
+  }), _c('div', {
+    staticClass: "ui-resizable-handle ui-resizable-e",
+    staticStyle: {
+      "z-index": "90"
+    }
+  })]), _c('th', {
+    staticClass: "ui-resizable",
+    staticStyle: {
+      "width": "156px",
+      "min-width": "200px",
+      "max-width": "200px"
+    },
+    attrs: {
+      "id": "th-LOCATION"
+    }
+  }, [_c('span', {
+    staticClass: "d-inline-block",
+    staticStyle: {
+      "min-width": "90px"
+    }
+  }, [_vm._v("Location"), _c('span', {
+    staticClass: "d-inline-block"
+  }, [_c('span', {
+    staticClass: "text-danger"
+  }, [_vm._v("*")])])]), _c('div', {
+    staticClass: "sizer",
+    attrs: {
+      "id": "th-LOCATION-sizer"
+    }
+  }), _c('div', {
+    staticClass: "ui-resizable-handle ui-resizable-e",
+    staticStyle: {
+      "z-index": "90"
+    }
+  })]), _c('th', {
+    staticClass: "ui-resizable",
+    staticStyle: {
+      "width": "108px",
+      "min-width": "108px",
+      "max-width": "108px"
+    },
+    attrs: {
+      "id": "th-QUANTITY"
+    }
+  }, [_c('span', {
+    staticClass: "d-inline-block",
+    staticStyle: {
+      "min-width": "90px"
+    }
+  }, [_vm._v("Quantity"), _c('span', {
+    staticClass: "d-inline-block"
+  }, [_c('span', {
+    staticClass: "text-danger"
+  }, [_vm._v("*")])])]), _c('div', {
+    staticClass: "sizer",
+    attrs: {
+      "id": "th-QUANTITY-sizer"
+    }
+  }), _c('div', {
+    staticClass: "ui-resizable-handle ui-resizable-e",
+    staticStyle: {
+      "z-index": "90"
+    }
+  })]), _c('th', {
+    staticClass: "ui-resizable",
+    staticStyle: {
+      "width": "85px",
+      "min-width": "85px",
+      "max-width": "85px"
+    },
+    attrs: {
+      "id": "th-MODEL"
+    }
+  }, [_c('span', {
+    staticStyle: {
+      "min-width": "67px"
+    }
+  }, [_vm._v("Model")]), _c('div', {
+    staticClass: "sizer",
+    attrs: {
+      "id": "th-MODEL-sizer"
+    }
+  }), _c('div', {
+    staticClass: "ui-resizable-handle ui-resizable-e",
+    staticStyle: {
+      "z-index": "90"
+    }
+  })]), _c('th', {
+    staticClass: "ui-resizable",
+    staticStyle: {
+      "width": "144px",
+      "min-width": "144px",
+      "max-width": "144px"
+    },
+    attrs: {
+      "id": "th-MANUFACTURER"
+    }
+  }, [_c('span', {
+    staticStyle: {
+      "min-width": "126px"
+    }
+  }, [_vm._v("Manufacturer")]), _c('div', {
+    staticClass: "sizer",
+    attrs: {
+      "id": "th-MANUFACTURER-sizer"
+    }
+  }), _c('div', {
+    staticClass: "ui-resizable-handle ui-resizable-e",
+    staticStyle: {
+      "z-index": "90"
+    }
+  })]), _c('th', {
+    staticClass: "ui-resizable",
+    staticStyle: {
+      "width": "85px",
+      "min-width": "85px",
+      "max-width": "85px"
+    },
+    attrs: {
+      "id": "th-VENDOR"
+    }
+  }, [_c('span', {
+    staticStyle: {
+      "min-width": "67px"
+    }
+  }, [_vm._v("Vendor")]), _c('div', {
+    staticClass: "sizer",
+    attrs: {
+      "id": "th-VENDOR-sizer"
+    }
+  }), _c('div', {
+    staticClass: "ui-resizable-handle ui-resizable-e",
+    staticStyle: {
+      "z-index": "90"
+    }
+  })]), _c('th', {
+    staticClass: "ui-resizable",
+    staticStyle: {
+      "width": "192px",
+      "min-width": "192px",
+      "max-width": "192px"
+    },
+    attrs: {
+      "id": "th-PRODUCTCOSTQTY"
+    }
+  }, [_c('span', {
+    staticStyle: {
+      "min-width": "174px"
+    }
+  }, [_vm._v("Product Cost/Qty")]), _c('div', {
+    staticClass: "sizer",
+    attrs: {
+      "id": "th-PRODUCTCOSTQTY-sizer"
+    }
+  }), _c('div', {
+    staticClass: "ui-resizable-handle ui-resizable-e",
+    staticStyle: {
+      "z-index": "90"
+    }
+  })]), _c('th', {
+    staticClass: "ui-resizable",
+    staticStyle: {
+      "width": "168px",
+      "min-width": "168px",
+      "max-width": "168px"
+    },
+    attrs: {
+      "id": "th-PURCHASEORDER"
+    }
+  }, [_c('span', {
+    staticStyle: {
+      "min-width": "150px"
+    }
+  }, [_vm._v("Purchase Order")]), _c('div', {
+    staticClass: "sizer",
+    attrs: {
+      "id": "th-PURCHASEORDER-sizer"
+    }
+  }), _c('div', {
+    staticClass: "ui-resizable-handle ui-resizable-e",
+    staticStyle: {
+      "z-index": "90"
+    }
+  })]), _c('th', {
+    staticClass: "ui-resizable",
+    staticStyle: {
+      "width": "156px",
+      "min-width": "156px",
+      "max-width": "156px"
+    },
+    attrs: {
+      "id": "th-PURCHASEDATE"
+    }
+  }, [_c('span', {
+    staticStyle: {
+      "min-width": "138px"
+    }
+  }, [_vm._v("Purchase Date")]), _c('div', {
+    staticClass: "sizer",
+    attrs: {
+      "id": "th-PURCHASEDATE-sizer"
+    }
+  }), _c('div', {
+    staticClass: "ui-resizable-handle ui-resizable-e",
+    staticStyle: {
+      "z-index": "90"
+    }
+  })]), _c('th', {
+    staticClass: "ui-resizable",
+    staticStyle: {
+      "width": "168px",
+      "min-width": "168px",
+      "max-width": "168px"
+    },
+    attrs: {
+      "id": "th-INVOICENUMBER"
+    }
+  }, [_c('span', {
+    staticStyle: {
+      "min-width": "150px"
+    }
+  }, [_vm._v("Invoice Number")]), _c('div', {
+    staticClass: "sizer",
+    attrs: {
+      "id": "th-INVOICENUMBER-sizer"
+    }
+  }), _c('div', {
+    staticClass: "ui-resizable-handle ui-resizable-e",
+    staticStyle: {
+      "z-index": "90"
+    }
+  })]), _c('th', {
+    staticClass: "ui-resizable",
+    staticStyle: {
+      "width": "144px",
+      "min-width": "144px",
+      "max-width": "144px"
+    },
+    attrs: {
+      "id": "th-INVOICEDATE"
+    }
+  }, [_c('span', {
+    staticStyle: {
+      "min-width": "126px"
+    }
+  }, [_vm._v("Invoice Date")]), _c('div', {
+    staticClass: "sizer",
+    attrs: {
+      "id": "th-INVOICEDATE-sizer"
+    }
+  }), _c('div', {
+    staticClass: "ui-resizable-handle ui-resizable-e",
+    staticStyle: {
+      "z-index": "90"
+    }
+  })]), _c('th', {
+    staticClass: "ui-resizable",
+    staticStyle: {
+      "width": "180px",
+      "min-width": "180px",
+      "max-width": "180px"
+    },
+    attrs: {
+      "id": "th-NAMEOFINSURER"
+    }
+  }, [_c('span', {
+    staticStyle: {
+      "min-width": "162px"
+    }
+  }, [_vm._v("Name of Insurer")]), _c('div', {
+    staticClass: "sizer",
+    attrs: {
+      "id": "th-NAMEOFINSURER-sizer"
+    }
+  }), _c('div', {
+    staticClass: "ui-resizable-handle ui-resizable-e",
+    staticStyle: {
+      "z-index": "90"
+    }
+  })]), _c('th', {
+    staticClass: "ui-resizable",
+    staticStyle: {
+      "width": "240px",
+      "min-width": "240px",
+      "max-width": "240px"
+    },
+    attrs: {
+      "id": "th-INSURANCEVALIDUPTO"
+    }
+  }, [_c('span', {
+    staticStyle: {
+      "min-width": "222px"
+    }
+  }, [_vm._v("Insurance Valid Upto")]), _c('div', {
+    staticClass: "sizer",
+    attrs: {
+      "id": "th-INSURANCEVALIDUPTO-sizer"
+    }
+  }), _c('div', {
+    staticClass: "ui-resizable-handle ui-resizable-e",
+    staticStyle: {
+      "z-index": "90"
+    }
+  })]), _c('th', {
+    staticClass: "ui-resizable",
+    staticStyle: {
+      "width": "204px",
+      "min-width": "204px",
+      "max-width": "204px"
+    },
+    attrs: {
+      "id": "th-WARRANTYDURATION"
+    }
+  }, [_c('span', {
+    staticStyle: {
+      "min-width": "186px"
+    }
+  }, [_vm._v("Warranty Duration")]), _c('div', {
+    staticClass: "sizer",
+    attrs: {
+      "id": "th-WARRANTYDURATION-sizer"
+    }
+  }), _c('div', {
+    staticClass: "ui-resizable-handle ui-resizable-e",
+    staticStyle: {
+      "z-index": "90"
+    }
+  })]), _c('th', {
+    staticClass: "ui-resizable",
+    staticStyle: {
+      "width": "204px",
+      "min-width": "204px",
+      "max-width": "204px"
+    },
+    attrs: {
+      "id": "th-DEPRECIATIONRULE"
+    }
+  }, [_c('span', {
+    staticStyle: {
+      "min-width": "186px"
+    }
+  }, [_vm._v("Depreciation Rule")]), _c('div', {
+    staticClass: "sizer",
+    attrs: {
+      "id": "th-DEPRECIATIONRULE-sizer"
+    }
+  }), _c('div', {
+    staticClass: "ui-resizable-handle ui-resizable-e",
+    staticStyle: {
+      "z-index": "90"
+    }
+  })]), _c('th', {
+    staticClass: "ui-resizable",
+    staticStyle: {
+      "width": "144px",
+      "min-width": "144px",
+      "max-width": "144px"
+    },
+    attrs: {
+      "id": "th-SALVAGECOST"
+    }
+  }, [_c('span', {
+    staticStyle: {
+      "min-width": "126px"
+    }
+  }, [_vm._v("Salvage Cost")]), _c('div', {
+    staticClass: "sizer",
+    attrs: {
+      "id": "th-SALVAGECOST-sizer"
+    }
+  }), _c('div', {
+    staticClass: "ui-resizable-handle ui-resizable-e",
+    staticStyle: {
+      "z-index": "90"
+    }
+  })]), _c('th', {
+    staticClass: "ui-resizable",
+    staticStyle: {
+      "width": "156px",
+      "min-width": "156px",
+      "max-width": "156px"
+    },
+    attrs: {
+      "id": "th-SERIALNUMBER"
+    }
+  }, [_c('span', {
+    staticStyle: {
+      "min-width": "138px"
+    }
+  }, [_vm._v("Serial Number")]), _c('div', {
+    staticClass: "sizer",
+    attrs: {
+      "id": "th-SERIALNUMBER-sizer"
+    }
+  }), _c('div', {
+    staticClass: "ui-resizable-handle ui-resizable-e",
+    staticStyle: {
+      "z-index": "90"
+    }
+  })]), _c('th', {
+    staticClass: "ui-resizable",
+    staticStyle: {
+      "width": "85px",
+      "min-width": "85px",
+      "max-width": "85px"
+    },
+    attrs: {
+      "id": "th-BARCODE"
+    }
+  }, [_c('span', {
+    staticStyle: {
+      "min-width": "67px"
+    }
+  }, [_vm._v("Barcode")]), _c('div', {
+    staticClass: "sizer",
+    attrs: {
+      "id": "th-BARCODE-sizer"
+    }
+  }), _c('div', {
+    staticClass: "ui-resizable-handle ui-resizable-e",
+    staticStyle: {
+      "z-index": "90"
+    }
+  })])])]), _c('tbody', _vm._l(_vm.Xdata, function (item, index) {
+    return _c('tr', {
+      key: index
+    }, [_c('td', [_c('Field', {
+      attrs: {
+        "name": 'ProductType' + index,
+        "rules": {
+          'required': true
+        }
+      },
+      scopedSlots: _vm._u([{
+        key: "default",
+        fn: function ({
+          errors
+        }) {
+          return [_c('select', {
+            directives: [{
+              name: "model",
+              rawName: "v-model",
+              value: item.ItemTypeID,
+              expression: "item.ItemTypeID"
+            }],
+            class: {
+              'form-control': true,
+              'is-invalid': errors[0]
+            },
+            attrs: {
+              "name": 'ProductType' + index
+            },
+            on: {
+              "change": function ($event) {
+                var $$selectedVal = Array.prototype.filter.call($event.target.options, function (o) {
+                  return o.selected;
+                }).map(function (o) {
+                  var val = "_value" in o ? o._value : o.value;
+                  return val;
+                });
+                _vm.$set(item, "ItemTypeID", $event.target.multiple ? $$selectedVal : $$selectedVal[0]);
+              }
+            }
+          }, [_c('option', {
+            attrs: {
+              "value": ""
+            }
+          }, [_vm._v("Select")]), _vm._l(_vm.AssetType, function (pitem, pIndex) {
+            return _c('option', {
+              key: pIndex,
+              domProps: {
+                "value": pitem.ASSETID
+              }
+            }, [_vm._v(_vm._s(pitem.ASSETTYPE))]);
+          })], 2)];
+        }
+      }], null, true)
+    })], 1), _c('td', [_c('Field', {
+      attrs: {
+        "name": 'Status' + index,
+        "rules": {
+          'required': true
+        }
+      },
+      scopedSlots: _vm._u([{
+        key: "default",
+        fn: function ({
+          errors
+        }) {
+          return [_c('select', {
+            directives: [{
+              name: "model",
+              rawName: "v-model",
+              value: item.StatusID,
+              expression: "item.StatusID"
+            }],
+            class: {
+              'form-control': true,
+              'is-invalid': errors[0]
+            },
+            attrs: {
+              "name": 'Status' + index
+            },
+            on: {
+              "change": function ($event) {
+                var $$selectedVal = Array.prototype.filter.call($event.target.options, function (o) {
+                  return o.selected;
+                }).map(function (o) {
+                  var val = "_value" in o ? o._value : o.value;
+                  return val;
+                });
+                _vm.$set(item, "StatusID", $event.target.multiple ? $$selectedVal : $$selectedVal[0]);
+              }
+            }
+          }, [_c('option', {
+            attrs: {
+              "value": ""
+            }
+          }, [_vm._v("Select")]), _vm._l(_vm.StatusListData, function (item, itemIndex) {
+            return _c('option', {
+              key: itemIndex,
+              domProps: {
+                "value": item.value
+              }
+            }, [_vm._v(_vm._s(item.name))]);
+          })], 2)];
+        }
+      }], null, true)
+    })], 1), _c('td', [_c('Field', {
+      attrs: {
+        "name": 'ProductName' + index,
+        "rules": {
+          'required': true
+        }
+      },
+      scopedSlots: _vm._u([{
+        key: "default",
+        fn: function ({
+          errors
+        }) {
+          return [_c('input', {
+            directives: [{
+              name: "model",
+              rawName: "v-model",
+              value: item.Item_Name,
+              expression: "item.Item_Name"
+            }],
+            class: {
+              'form-control': true,
+              'is-invalid': errors[0]
+            },
+            attrs: {
+              "type": "text",
+              "name": 'ProductName' + index
+            },
+            domProps: {
+              "value": item.Item_Name
+            },
+            on: {
+              "input": function ($event) {
+                if ($event.target.composing) return;
+                _vm.$set(item, "Item_Name", $event.target.value);
+              }
+            }
+          })];
+        }
+      }], null, true)
+    })], 1), _c('td', [_c('input', {
+      directives: [{
+        name: "model",
+        rawName: "v-model",
+        value: item.ItemCode,
+        expression: "item.ItemCode"
+      }],
+      staticClass: "form-control",
+      attrs: {
+        "type": "text"
+      },
+      domProps: {
+        "value": item.ItemCode
+      },
+      on: {
+        "input": function ($event) {
+          if ($event.target.composing) return;
+          _vm.$set(item, "ItemCode", $event.target.value);
+        }
+      }
+    })]), _c('td', [_c('Field', {
+      attrs: {
+        "name": 'BarcodeType' + index,
+        "rules": {
+          'required': true
+        }
+      },
+      scopedSlots: _vm._u([{
+        key: "default",
+        fn: function ({
+          errors
+        }) {
+          return [_c('select', {
+            directives: [{
+              name: "model",
+              rawName: "v-model",
+              value: item.Barcode_Type,
+              expression: "item.Barcode_Type"
+            }],
+            class: {
+              'form-control': true,
+              'is-invalid': errors[0]
+            },
+            attrs: {
+              "name": 'BarcodeType' + index
+            },
+            on: {
+              "change": function ($event) {
+                var $$selectedVal = Array.prototype.filter.call($event.target.options, function (o) {
+                  return o.selected;
+                }).map(function (o) {
+                  var val = "_value" in o ? o._value : o.value;
+                  return val;
+                });
+                _vm.$set(item, "Barcode_Type", $event.target.multiple ? $$selectedVal : $$selectedVal[0]);
+              }
+            }
+          }, [_c('option', {
+            attrs: {
+              "value": ""
+            }
+          }, [_vm._v("Select")]), _vm._l(_vm.BarcodeType, function (itm, index) {
+            return _c('option', {
+              key: index,
+              domProps: {
+                "value": itm.BARCODE_TYPE_ID == 1 ? 'Barcode' : 'QR'
+              }
+            }, [_vm._v(" " + _vm._s(itm.BARCODE_TYPE))]);
+          })], 2)];
+        }
+      }], null, true)
+    })], 1), _c('td', [_c('input', {
+      directives: [{
+        name: "model",
+        rawName: "v-model",
+        value: item.Description,
+        expression: "item.Description"
+      }],
+      staticClass: "form-control",
+      attrs: {
+        "type": "text"
+      },
+      domProps: {
+        "value": item.Description
+      },
+      on: {
+        "input": function ($event) {
+          if ($event.target.composing) return;
+          _vm.$set(item, "Description", $event.target.value);
+        }
+      }
+    })]), _c('td', [_c('select', {
+      directives: [{
+        name: "model",
+        rawName: "v-model",
+        value: item.CalibrationValue,
+        expression: "item.CalibrationValue"
+      }],
+      staticClass: "form-control",
+      on: {
+        "change": function ($event) {
+          var $$selectedVal = Array.prototype.filter.call($event.target.options, function (o) {
+            return o.selected;
+          }).map(function (o) {
+            var val = "_value" in o ? o._value : o.value;
+            return val;
+          });
+          _vm.$set(item, "CalibrationValue", $event.target.multiple ? $$selectedVal : $$selectedVal[0]);
+        }
+      }
+    }, [_c('option', {
+      attrs: {
+        "value": ""
+      }
+    }, [_vm._v("Select")]), _vm._l(_vm.CalibrationData, function (Citem, CalibrationIndex) {
+      return _c('option', {
+        key: CalibrationIndex,
+        domProps: {
+          "value": Citem.value
+        }
+      }, [_vm._v(_vm._s(Citem.name))]);
+    })], 2)]), _c('td', [_c('select', {
+      directives: [{
+        name: "model",
+        rawName: "v-model",
+        value: item.AuditValue,
+        expression: "item.AuditValue"
+      }],
+      staticClass: "form-control",
+      on: {
+        "change": function ($event) {
+          var $$selectedVal = Array.prototype.filter.call($event.target.options, function (o) {
+            return o.selected;
+          }).map(function (o) {
+            var val = "_value" in o ? o._value : o.value;
+            return val;
+          });
+          _vm.$set(item, "AuditValue", $event.target.multiple ? $$selectedVal : $$selectedVal[0]);
+        }
+      }
+    }, [_c('option', {
+      attrs: {
+        "value": ""
+      }
+    }, [_vm._v("Select")]), _vm._l(_vm.AuditData, function (Aitem, AuditIndex) {
+      return _c('option', {
+        key: AuditIndex,
+        domProps: {
+          "value": Aitem.value
+        }
+      }, [_vm._v(_vm._s(Aitem.name))]);
+    })], 2)]), _c('td', [_c('select', {
+      directives: [{
+        name: "model",
+        rawName: "v-model",
+        value: item.ImageCaptureValue,
+        expression: "item.ImageCaptureValue"
+      }],
+      staticClass: "form-control",
+      on: {
+        "change": function ($event) {
+          var $$selectedVal = Array.prototype.filter.call($event.target.options, function (o) {
+            return o.selected;
+          }).map(function (o) {
+            var val = "_value" in o ? o._value : o.value;
+            return val;
+          });
+          _vm.$set(item, "ImageCaptureValue", $event.target.multiple ? $$selectedVal : $$selectedVal[0]);
+        }
+      }
+    }, [_c('option', {
+      attrs: {
+        "value": ""
+      }
+    }, [_vm._v("Select")]), _vm._l(_vm.ImageCaptureData, function (Iitem, ImageCaptureIndex) {
+      return _c('option', {
+        key: ImageCaptureIndex,
+        domProps: {
+          "value": Iitem.value
+        }
+      }, [_vm._v(_vm._s(Iitem.name))]);
+    })], 2)]), _c('td', [_c('div', {
+      staticClass: "custom-control custom-checkbox"
+    }, [_c('input', {
+      directives: [{
+        name: "model",
+        rawName: "v-model",
+        value: item.IsUnique,
+        expression: "item.IsUnique"
+      }],
+      ref: "theCheckbox",
+      refInFor: true,
+      staticClass: "custom-control-input",
+      attrs: {
+        "for": "chk_" + index,
+        "data-catalogid": item.IsUnique,
+        "type": "checkbox",
+        "id": "chk_" + index
+      },
+      domProps: {
+        "checked": Array.isArray(item.IsUnique) ? _vm._i(item.IsUnique, null) > -1 : item.IsUnique
+      },
+      on: {
+        "click": _vm.handleClick,
+        "change": function ($event) {
+          var $$a = item.IsUnique,
+            $$el = $event.target,
+            $$c = $$el.checked ? true : false;
+          if (Array.isArray($$a)) {
+            var $$v = null,
+              $$i = _vm._i($$a, $$v);
+            if ($$el.checked) {
+              $$i < 0 && _vm.$set(item, "IsUnique", $$a.concat([$$v]));
+            } else {
+              $$i > -1 && _vm.$set(item, "IsUnique", $$a.slice(0, $$i).concat($$a.slice($$i + 1)));
+            }
+          } else {
+            _vm.$set(item, "IsUnique", $$c);
+          }
+        }
+      }
+    }), _c('label', {
+      staticClass: "custom-control-label universal-custom-control-label pt-1",
+      attrs: {
+        "for": "chk_" + index
+      }
+    })])]), _c('Field', {
+      attrs: {
+        "name": 'Location' + index,
+        "rules": {
+          'required': true
+        }
+      },
+      scopedSlots: _vm._u([{
+        key: "default",
+        fn: function ({
+          errors
+        }) {
+          return [_c('tree-view', {
+            class: {
+              'form-control': true,
+              'is-invalid': errors[0]
+            },
+            attrs: {
+              "options": _vm.options,
+              "show-count": true,
+              "placeholder": "Select Location",
+              "name": 'Location' + index
+            },
+            model: {
+              value: item.LocationID,
+              callback: function ($$v) {
+                _vm.$set(item, "LocationID", $$v);
+              },
+              expression: "item.LocationID"
+            }
+          })];
+        }
+      }], null, true)
+    }), _c('td', [_c('Field', {
+      attrs: {
+        "name": 'Quantity' + index,
+        "rules": {
+          'required': true
+        }
+      },
+      scopedSlots: _vm._u([{
+        key: "default",
+        fn: function ({
+          errors
+        }) {
+          return [_c('input', {
+            directives: [{
+              name: "model",
+              rawName: "v-model",
+              value: item.Quantity,
+              expression: "item.Quantity"
+            }],
+            class: {
+              'form-control': true,
+              'is-invalid': errors[0]
+            },
+            attrs: {
+              "type": "text",
+              "name": 'Quantity' + index
+            },
+            domProps: {
+              "value": item.Quantity
+            },
+            on: {
+              "input": function ($event) {
+                if ($event.target.composing) return;
+                _vm.$set(item, "Quantity", $event.target.value);
+              }
+            }
+          })];
+        }
+      }], null, true)
+    })], 1), _c('td', [_c('input', {
+      directives: [{
+        name: "model",
+        rawName: "v-model",
+        value: item.Model,
+        expression: "item.Model"
+      }],
+      staticClass: "form-control",
+      attrs: {
+        "type": "text"
+      },
+      domProps: {
+        "value": item.Model
+      },
+      on: {
+        "input": function ($event) {
+          if ($event.target.composing) return;
+          _vm.$set(item, "Model", $event.target.value);
+        }
+      }
+    })]), _c('td', [_c('input', {
+      directives: [{
+        name: "model",
+        rawName: "v-model",
+        value: item.Manufacturer,
+        expression: "item.Manufacturer"
+      }],
+      staticClass: "form-control",
+      attrs: {
+        "type": "text"
+      },
+      domProps: {
+        "value": item.Manufacturer
+      },
+      on: {
+        "input": function ($event) {
+          if ($event.target.composing) return;
+          _vm.$set(item, "Manufacturer", $event.target.value);
+        }
+      }
+    })]), _c('td', [_c('input', {
+      directives: [{
+        name: "model",
+        rawName: "v-model",
+        value: item.Vendor,
+        expression: "item.Vendor"
+      }],
+      staticClass: "form-control",
+      attrs: {
+        "type": "text"
+      },
+      domProps: {
+        "value": item.Vendor
+      },
+      on: {
+        "input": function ($event) {
+          if ($event.target.composing) return;
+          _vm.$set(item, "Vendor", $event.target.value);
+        }
+      }
+    })]), _c('td', [_c('input', {
+      directives: [{
+        name: "model",
+        rawName: "v-model",
+        value: item.AssetCost,
+        expression: "item.AssetCost"
+      }],
+      staticClass: "form-control",
+      attrs: {
+        "type": "text"
+      },
+      domProps: {
+        "value": item.AssetCost
+      },
+      on: {
+        "input": function ($event) {
+          if ($event.target.composing) return;
+          _vm.$set(item, "AssetCost", $event.target.value);
+        }
+      }
+    })]), _c('td', [_c('input', {
+      directives: [{
+        name: "model",
+        rawName: "v-model",
+        value: item.PurchaseOrder,
+        expression: "item.PurchaseOrder"
+      }],
+      staticClass: "form-control",
+      attrs: {
+        "type": "text"
+      },
+      domProps: {
+        "value": item.PurchaseOrder
+      },
+      on: {
+        "input": function ($event) {
+          if ($event.target.composing) return;
+          _vm.$set(item, "PurchaseOrder", $event.target.value);
+        }
+      }
+    })]), _c('td', [_c('v-date-picker', {
+      staticClass: "timedate input-group",
+      attrs: {
+        "popover": _vm.popover,
+        "name": item.PurchaseDate,
+        "minute-increment": 5
+      },
+      scopedSlots: _vm._u([{
+        key: "default",
+        fn: function ({
+          inputValue,
+          togglePopover
+        }) {
+          return [_c('input', {
+            class: {
+              'form-control': true
+            },
+            attrs: {
+              "placeholder": "M/D/YYYY h:mm A"
+            },
+            domProps: {
+              "value": item.PurchaseDate
+            },
+            on: {
+              "click": function ($event) {
+                return togglePopover();
+              }
+            }
+          }), _c('div', {
+            staticClass: "input-group-append",
+            on: {
+              "click": function ($event) {
+                return togglePopover();
+              }
+            }
+          }, [_c('span', {
+            staticClass: "input-group-text"
+          }, [_c('em', {
+            staticClass: "fa fa-calendar"
+          })])])];
+        }
+      }], null, true),
+      model: {
+        value: item.PurchaseDate,
+        callback: function ($$v) {
+          _vm.$set(item, "PurchaseDate", $$v);
+        },
+        expression: "item.PurchaseDate"
+      }
+    })], 1), _c('td', [_c('input', {
+      directives: [{
+        name: "model",
+        rawName: "v-model",
+        value: item.InvoiceNumber,
+        expression: "item.InvoiceNumber"
+      }],
+      staticClass: "form-control",
+      attrs: {
+        "type": "text"
+      },
+      domProps: {
+        "value": item.InvoiceNumber
+      },
+      on: {
+        "input": function ($event) {
+          if ($event.target.composing) return;
+          _vm.$set(item, "InvoiceNumber", $event.target.value);
+        }
+      }
+    })]), _c('td', [_c('v-date-picker', {
+      staticClass: "timedate input-group",
+      attrs: {
+        "popover": _vm.popover,
+        "name": item.InvoiceDate,
+        "minute-increment": 5
+      },
+      scopedSlots: _vm._u([{
+        key: "default",
+        fn: function ({
+          inputValue,
+          togglePopover
+        }) {
+          return [_c('input', {
+            class: {
+              'form-control': true
+            },
+            attrs: {
+              "placeholder": "M/D/YYYY h:mm A"
+            },
+            domProps: {
+              "value": item.InvoiceDate
+            },
+            on: {
+              "click": function ($event) {
+                return togglePopover();
+              }
+            }
+          }), _c('div', {
+            staticClass: "input-group-append",
+            on: {
+              "click": function ($event) {
+                return togglePopover();
+              }
+            }
+          }, [_c('span', {
+            staticClass: "input-group-text"
+          }, [_c('em', {
+            staticClass: "fa fa-calendar"
+          })])])];
+        }
+      }], null, true),
+      model: {
+        value: item.InvoiceDate,
+        callback: function ($$v) {
+          _vm.$set(item, "InvoiceDate", $$v);
+        },
+        expression: "item.InvoiceDate"
+      }
+    })], 1), _c('td', [_c('input', {
+      directives: [{
+        name: "model",
+        rawName: "v-model",
+        value: item.InsurerName,
+        expression: "item.InsurerName"
+      }],
+      staticClass: "form-control",
+      attrs: {
+        "type": "text"
+      },
+      domProps: {
+        "value": item.InsurerName
+      },
+      on: {
+        "input": function ($event) {
+          if ($event.target.composing) return;
+          _vm.$set(item, "InsurerName", $event.target.value);
+        }
+      }
+    })]), _c('td', [_c('v-date-picker', {
+      staticClass: "timedate input-group",
+      attrs: {
+        "popover": _vm.popover,
+        "name": item.InsuranceTo,
+        "minute-increment": 5
+      },
+      scopedSlots: _vm._u([{
+        key: "default",
+        fn: function ({
+          inputValue,
+          togglePopover
+        }) {
+          return [_c('input', {
+            class: {
+              'form-control': true
+            },
+            attrs: {
+              "placeholder": "M/D/YYYY h:mm A"
+            },
+            domProps: {
+              "value": item.InsuranceTo
+            },
+            on: {
+              "click": function ($event) {
+                return togglePopover();
+              }
+            }
+          }), _c('div', {
+            staticClass: "input-group-append",
+            on: {
+              "click": function ($event) {
+                return togglePopover();
+              }
+            }
+          }, [_c('span', {
+            staticClass: "input-group-text"
+          }, [_c('em', {
+            staticClass: "fa fa-calendar"
+          })])])];
+        }
+      }], null, true),
+      model: {
+        value: item.InsuranceTo,
+        callback: function ($$v) {
+          _vm.$set(item, "InsuranceTo", $$v);
+        },
+        expression: "item.InsuranceTo"
+      }
+    })], 1), _c('td', [_c('v-date-picker', {
+      staticClass: "timedate input-group",
+      attrs: {
+        "popover": _vm.popover,
+        "name": item.WarrantyDuration,
+        "minute-increment": 5
+      },
+      scopedSlots: _vm._u([{
+        key: "default",
+        fn: function ({
+          inputValue,
+          togglePopover
+        }) {
+          return [_c('input', {
+            class: {
+              'form-control': true
+            },
+            attrs: {
+              "placeholder": "M/D/YYYY h:mm A"
+            },
+            domProps: {
+              "value": item.WarrantyDuration
+            },
+            on: {
+              "click": function ($event) {
+                return togglePopover();
+              }
+            }
+          }), _c('div', {
+            staticClass: "input-group-append",
+            on: {
+              "click": function ($event) {
+                return togglePopover();
+              }
+            }
+          }, [_c('span', {
+            staticClass: "input-group-text"
+          }, [_c('em', {
+            staticClass: "fa fa-calendar"
+          })])])];
+        }
+      }], null, true),
+      model: {
+        value: item.WarrantyDuration,
+        callback: function ($$v) {
+          _vm.$set(item, "WarrantyDuration", $$v);
+        },
+        expression: "item.WarrantyDuration"
+      }
+    })], 1), _c('td', [_c('select', {
+      directives: [{
+        name: "model",
+        rawName: "v-model",
+        value: item.DepreciationRule,
+        expression: "item.DepreciationRule"
+      }],
+      staticClass: "form-control",
+      on: {
+        "change": function ($event) {
+          var $$selectedVal = Array.prototype.filter.call($event.target.options, function (o) {
+            return o.selected;
+          }).map(function (o) {
+            var val = "_value" in o ? o._value : o.value;
+            return val;
+          });
+          _vm.$set(item, "DepreciationRule", $event.target.multiple ? $$selectedVal : $$selectedVal[0]);
+        }
+      }
+    }, [_c('option', {
+      attrs: {
+        "value": ""
+      }
+    }, [_vm._v("Select")]), _vm._l(_vm.dData, function (ditem, dIndex) {
+      return _c('option', {
+        key: dIndex,
+        domProps: {
+          "value": ditem.value
+        }
+      }, [_vm._v(" " + _vm._s(ditem.name))]);
+    })], 2)]), _c('td', [_c('input', {
+      directives: [{
+        name: "model",
+        rawName: "v-model",
+        value: item.SalvageCost,
+        expression: "item.SalvageCost"
+      }],
+      staticClass: "form-control",
+      attrs: {
+        "type": "text"
+      },
+      domProps: {
+        "value": item.SalvageCost
+      },
+      on: {
+        "input": function ($event) {
+          if ($event.target.composing) return;
+          _vm.$set(item, "SalvageCost", $event.target.value);
+        }
+      }
+    })]), _c('td', [_c('input', {
+      directives: [{
+        name: "model",
+        rawName: "v-model",
+        value: item.SerialNumber,
+        expression: "item.SerialNumber"
+      }],
+      staticClass: "form-control",
+      attrs: {
+        "type": "text"
+      },
+      domProps: {
+        "value": item.SerialNumber
+      },
+      on: {
+        "input": function ($event) {
+          if ($event.target.composing) return;
+          _vm.$set(item, "SerialNumber", $event.target.value);
+        }
+      }
+    })]), _c('td', [_c('input', {
+      directives: [{
+        name: "model",
+        rawName: "v-model",
+        value: item.BarcodeNumber,
+        expression: "item.BarcodeNumber"
+      }],
+      staticClass: "form-control",
+      attrs: {
+        "type": "text"
+      },
+      domProps: {
+        "value": item.BarcodeNumber
+      },
+      on: {
+        "input": function ($event) {
+          if ($event.target.composing) return;
+          _vm.$set(item, "BarcodeNumber", $event.target.value);
+        }
+      }
+    })])], 1);
+  }), 0)]), _vm.Xdata.length == '0' ? _c('div', {
+    staticClass: "text-danger text-center no-record",
+    attrs: {
+      "colspan": "10"
+    }
+  }, [_vm._v(" " + _vm._s(_vm.$t('NoRecordfound')) + " ")]) : _vm._e()])], 1), _c('div', {
+    staticClass: "row flex-row-reverse"
+  }, [_c('div', {
+    staticClass: "col-lg-6 text-right"
+  }, [_c('div', {
+    staticClass: "search-btm-btn"
+  }, [_c('a', {
+    staticClass: "btn btn-success formbtn widthhalf",
+    attrs: {
+      "id": "aSubmit",
+      "href": "javascript:;",
+      "title": "",
+      "data-toggle-tooltip": "tooltip",
+      "data-original-title": "Import from excel file"
+    },
+    on: {
+      "click": function ($event) {
+        return _vm.SubmitData();
+      }
+    }
+  }, [_c('i', {
+    staticClass: "fa fa-save pr-2"
+  }), _vm._v("Submit")]), _vm._v("   "), _vm._m(0)])])])])])], 1);
+};
+var ImportProductvue_type_template_id_741fe449_scoped_true_staticRenderFns = [function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c('a', {
+    staticClass: "btn btn-danger formbtn my-2",
+    attrs: {
+      "title": "",
+      "href": "/AssetCatalog/Index",
+      "data-toggle-tooltip": "tooltip",
+      "data-original-title": "Cancel"
+    }
+  }, [_c('i', {
+    staticClass: "fa fa-close mr-2"
+  }), _vm._v("Cancel")]);
+}];
+
+// CONCATENATED MODULE: ./src/components/Modal/ImportProduct.vue?vue&type=template&id=741fe449&scoped=true&
+
+// EXTERNAL MODULE: ./src/service/DataService.js + 1 modules
+var DataService = __webpack_require__("1115");
+
+// EXTERNAL MODULE: ./node_modules/@riophae/vue-treeselect/dist/vue-treeselect.cjs.js
+var vue_treeselect_cjs = __webpack_require__("ca17");
+var vue_treeselect_cjs_default = /*#__PURE__*/__webpack_require__.n(vue_treeselect_cjs);
+
+// EXTERNAL MODULE: ./node_modules/@riophae/vue-treeselect/dist/vue-treeselect.css
+var vue_treeselect = __webpack_require__("542c");
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--13-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Modal/ImportProduct.vue?vue&type=script&lang=js&
+
+
+
+
+/* harmony default export */ var ImportProductvue_type_script_lang_js_ = ({
+  components: {
+    'tree-view': vue_treeselect_cjs_default.a
+  },
+  props: {
+    filepath: {
+      type: String
+    }
+  },
+  data() {
+    return {
+      Xdata: [],
+      AssetType: [],
+      StatusListData: [],
+      BarcodeType: [],
+      AuditData: [],
+      ImageCaptureData: [],
+      AssetFrequencyList: [],
+      CalibrationData: [],
+      LocationValue: null,
+      options: [],
+      dData: [],
+      UserId: '',
+      ExcelListData: [],
+      ProductType: [],
+      StatusData: [],
+      BarcodeData: [],
+      AuditRecord: [],
+      ImageCaptureRecord: [],
+      CalibrationRecord: [],
+      DepreciationRecord: [],
+      LocationData: []
+    };
+  },
+  async created() {
+    this.UserId = this.GetUserInfo.ID;
+    await this.GetAssetTypeCustom();
+    await this.ImportProduct();
+    await this.GetBarcodeType();
+    await this.GetStatusList();
+    await this.GetAssetFrequency();
+    await this.GetLocationByCompanyId();
+    await this.GetDepreciationRule();
+    await this.GetLocationByCompanyId1();
+  },
+  methods: {
+    SubmitData() {
+      //debugger
+      var vm = this;
+      if (vm.Xdata.length != 0) {
+        vm.$refs.Productimport.validate().then(result => {
+          if (result) {
+            vm.Xdata.forEach((item, index) => {
+              vm.ProductType = vm.AssetType.find(x => x.ASSETID === item.ItemTypeID);
+              vm.StatusData = vm.StatusListData.find(x => x.value === item.StatusID);
+              vm.BarcodeData = vm.BarcodeType.find(x => x.BARCODE_TYPE === item.Barcode_Type);
+              vm.AuditRecord = vm.AuditData.find(x => x.value === item.AuditValue);
+              vm.ImageCaptureRecord = vm.ImageCaptureData.find(x => x.value === item.ImageCaptureValue);
+              vm.CalibrationRecord = vm.CalibrationData.find(x => x.value === item.CalibrationValue);
+              vm.DepreciationRecord = vm.dData.find(x => x.value === item.DepreciationRule);
+              // vm.options.forEach((itm, indx) => {
+              //     if(LocationRecord==undefined || LocationRecord.length==0)
+              //     {
+              //         if (itm.children.length > 0) {
+              //         LocationRecord =  vm.options[indx].children.find(x => x.id === item.LocationID);
+              //     }
+              //     else {
+              //         LocationRecord =  vm.options.find(x => x.id === item.LocationID);
+              //     }
+              //     }
+
+              // })
+              //debugger
+              vm.LocationRecord = vm.LocationData.find(x => x.value == item.LocationID);
+              //debugger
+              const obj = {
+                ItemTypeName: vm.ProductType.ASSETTYPE,
+                Item_type_id: parseInt(vm.ProductType.ASSETID),
+                Item_type: parseInt(vm.ProductType.ASSETID),
+                Item_Name: item.Item_Name,
+                Status: vm.StatusData.name,
+                ItemCode: item.ItemCode,
+                Description: item.Description,
+                Scanning_Media_Type: vm.BarcodeData.BARCODE_TYPE_ID,
+                ScanningMediaTypeID: parseInt(item.ScanningMediaTypeID),
+                standard: item.standard,
+                StandardID: parseInt(item.StandardID),
+                Audit: typeof vm.AuditRecord == 'undefined' ? "" : vm.AuditRecord.name,
+                AuditValue: typeof vm.AuditRecord == 'undefined' ? 0 : vm.AuditRecord.value,
+                ImageCapture: typeof vm.ImageCaptureRecord == 'undefined' ? "" : vm.ImageCaptureRecord.name,
+                ImageCaptureValue: typeof vm.ImageCaptureRecord == 'undefined' ? 0 : vm.ImageCaptureRecord.value,
+                Calibration: typeof vm.CalibrationRecord == 'undefined' ? "" : vm.CalibrationRecord.name,
+                CalibrationValue: typeof vm.CalibrationRecord == 'undefined' ? 0 : vm.CalibrationRecord.value,
+                IsUnique: item.IsUnique,
+                LocationName: vm.LocationRecord.name == undefined ? '' : vm.LocationRecord.name,
+                LocationID: vm.LocationRecord.name == undefined ? 0 : parseInt(vm.LocationRecord.value),
+                Quantity: parseInt(item.Quantity),
+                Model: item.Model,
+                Manufacturer: item.Manufacturer,
+                Vendor: item.Vendor,
+                PurchaseOrder: item.PurchaseOrder,
+                PurchaseDate: item.PurchaseDate,
+                WarrantyDuration: item.WarrantyDuration,
+                SalvageCost: parseInt(item.SalvageCost),
+                CompanyID: parseInt(item.CompanyID),
+                UserID: vm.UserId,
+                batchid: item.batchid,
+                StatusID: parseInt(vm.StatusData.value),
+                AssetCost: parseInt(item.AssetCost),
+                InvoiceNumber: item.InvoiceNumber,
+                InvoiceDate: item.InvoiceDate,
+                insurer_name: item.InsurerName,
+                InsuranceTo: item.InsuranceTo,
+                DepreciationRule: vm.DepreciationRecord == undefined ? '' : vm.DepreciationRecord.name,
+                SerialNumber: item.SerialNumber,
+                BarcodeNumber: item.BarcodeNumber
+              };
+              vm.ExcelListData.push(obj);
+            });
+            // debugger;
+            var JsonObj = JSON.stringify(vm.ExcelListData);
+            DataService["a" /* default */].BulkUploadPost(JsonObj).then(response => {
+              // debugger
+              var RetMeg = response.data.msg;
+              vm.ShowAlert(RetMeg, "success", true, vm.$t("Alert"));
+              vm.isLoading = false;
+              vm.$router.push({
+                path: "/AssetCatalog/Index"
+              });
+            });
+          } else {
+            vm.ShowAlert(vm.$t('ValidationHighlights'), "failure", vm.$t('Alert'));
+            vm.isLoading = false;
+          }
+        });
+      } else {
+        vm.ShowAlert(vm.$t('ValidationHighlights'), "failure", vm.$t('Alert'));
+        vm.isLoading = false;
+      }
+    },
+    async GetDepreciationRule() {
+      var vm = this;
+      vm.isLoading = true;
+      var obj = {};
+      await DataService["a" /* default */].GetDepreciationRuleList().then(response => {
+        vm.DepreciationData = JSON.parse(response.data);
+        vm.DepreciationData.forEach((item, index) => {
+          obj = {
+            name: item.DEPRECIATION_RULE_NAME,
+            value: item.DEPRECIATION_RULE_ID
+          };
+          vm.dData.push(obj);
+        });
+      });
+      vm.isLoading = false;
+    },
+    GetLocationByCompanyId1: async function () {
+      debugger;
+      var vm = this;
+      var params = `reqForm=Asset`;
+      await DataService["a" /* default */].GetLocationByCompanyId(params).then(function (response) {
+        var json = response.data;
+        let obj = {};
+        JSON.parse(response.data).data.forEach(element => {
+          obj = {
+            name: element.LOCATION_NAME,
+            value: element.COMPANY_LOCATION_ID
+          };
+          vm.LocationData.push(obj);
+        });
+      });
+
+      //     // await DataService.GetLocationByuserId(url).then(response => {
+      //     //     vm.FindalLocationArray = [];
+      //     //     response.data.data.forEach((value) => {
+      //     //         var CheckIfExist = vm.FindalLocationArray.filter(function (el) {
+      //     //             return el.COMPANY_LOCATION_ID == value.COMPANY_LOCATION_ID;
+      //     //         });
+      //     //         if (CheckIfExist.length == 0) {
+      //     //             if (value.PARENT_LOCATION_ID == null) {
+      //     //                 let locationId = value.COMPANY_LOCATION_ID
+      //     //                 let rslt = vm.getChildLocation(locationId, value, response.data.data)
+      //     //                 vm.FindalLocationArray.push(rslt)
+      //     //             }
+      //     //         }
+      //     //     });
+      //     //     vm.options = vm.FindalLocationArray;
+      //     // });
+    },
+
+    GetLocationByCompanyId: async function () {
+      var vm = this;
+      var url = `reqForm=assetassignment`;
+      await DataService["a" /* default */].GetLocationByuserId(url).then(response => {
+        vm.FindalLocationArray = [];
+        response.data.data.forEach(value => {
+          var CheckIfExist = vm.FindalLocationArray.filter(function (el) {
+            return el.COMPANY_LOCATION_ID == value.COMPANY_LOCATION_ID;
+          });
+          if (CheckIfExist.length == 0) {
+            if (value.PARENT_LOCATION_ID == null) {
+              let locationId = value.COMPANY_LOCATION_ID;
+              let rslt = vm.getChildLocation(locationId, value, response.data.data);
+              vm.FindalLocationArray.push(rslt);
+            }
+          }
+        });
+        vm.options = vm.FindalLocationArray;
+      });
+    },
+    getChildLocation: function (locationId, currentItem, data) {
+      let ths = this;
+      let treeArray = {};
+      treeArray = {
+        id: currentItem.COMPANY_LOCATION_ID,
+        label: currentItem.LOCATION_NAME
+      };
+      let retrunArray = treeArray;
+      var childArray = data.filter(function (el) {
+        return el.PARENT_LOCATION_ID == locationId;
+      });
+      let finalChildArray = [];
+      childArray.forEach(value => {
+        let ChildfolderId = value.COMPANY_LOCATION_ID;
+        var CheckIfExist1 = finalChildArray.filter(function (el) {
+          return el.COMPANY_LOCATION_ID == value.COMPANY_LOCATION_ID;
+        });
+        if (CheckIfExist1.length == 0) {
+          var CheckIfExist = data.filter(function (el) {
+            return el.PARENT_LOCATION_ID == ChildfolderId;
+          });
+          if (CheckIfExist != null && CheckIfExist.length > 0) {
+            let rslt = ths.getChildLocation(ChildfolderId, value, data);
+            finalChildArray.push(rslt);
+          } else {
+            treeArray = {
+              id: `${value.COMPANY_LOCATION_ID}`,
+              label: `${value.LOCATION_NAME}`
+            };
+            finalChildArray.push(treeArray);
+          }
+        }
+      });
+      retrunArray.children = finalChildArray;
+      return retrunArray;
+    },
+    onCancel: function () {
+      this.$router.push({
+        name: 'ProductListing'
+      });
+    },
+    ImportProduct: function () {
+      debugger;
+      var vm = this;
+      vm.isLoading = true;
+      var count = 0;
+      var countType = 0;
+      var url = `filepath=${vm.filepath}&typeName='Product'`;
+      DataService["a" /* default */].BulkUpload(url).then(response => {
+        debugger;
+        if (response.data != null) {
+          vm.Xdata = response.data;
+          vm.Xdata.forEach((item, indx) => {
+            if (item.LocationID == 0 || item.ItemTypeID == 0) {
+              vm.count = +1;
+              item.LocationID = null;
+              // item.LocationName="";
+              item.ItemTypeID = "";
+              vm.ShowAlert(vm.$t("LocationNotExistMsg"), "failure", vm.$t('Alert'));
+            }
+          });
+          vm.isLoading = false;
+        } else {
+          vm.ShowAlert(vm.$t('InValidFileUpload'), "warning", vm.$t('Alert'));
+          vm.isLoading = false;
+        }
+      });
+    },
+    async GetAssetFrequency() {
+      var vm = this;
+      let obj1 = [{
+        name: 'Annually',
+        value: 'annual'
+      }, {
+        name: 'Half yearly',
+        value: 'halfyear'
+      }, {
+        name: 'Quarterly',
+        value: 'quarterly'
+      }, {
+        name: 'Monthly',
+        value: 'month'
+      }, {
+        name: 'Bi-Weekly',
+        value: 'Bi-Weekly'
+      }, {
+        name: 'Weekly',
+        value: 'week'
+      }, {
+        name: 'Daily',
+        value: 'daily'
+      }];
+      vm.AssetFrequencyList.push(obj1);
+      await vm.AssetFrequencyList[0].forEach((item, index) => {
+        vm.AuditData.push({
+          name: item.name,
+          value: item.value
+        });
+        vm.ImageCaptureData.push({
+          name: item.name,
+          value: item.value
+        });
+        vm.CalibrationData.push({
+          name: item.name,
+          value: item.value
+        });
+      });
+    },
+    GetBarcodeType() {
+      var vm = this;
+      vm.isLoading = true;
+      var url = `BarcodeTypeId=`;
+      DataService["a" /* default */].GetBarcodetype(url).then(response => {
+        vm.BarcodeType = JSON.parse(response.data.result);
+        vm.isLoading = false;
+      });
+    },
+    GetStatusList() {
+      var vm = this;
+      vm.isLoading = true;
+      var url = `langCode=en&statusType=AssetManagement&hasglobal=true`;
+      DataService["a" /* default */].GetStatusList(url).then(response => {
+        var StatusLists = JSON.parse(response.data);
+        StatusLists.forEach((item, index) => {
+          var objStatus = {
+            value: item.STATUS_ID,
+            name: item.STATUS
+          };
+          vm.StatusListData.push(objStatus);
+        });
+        vm.isLoading = false;
+      });
+    },
+    GetAssetTypeCustom: function () {
+      debugger;
+      var vm = this;
+      vm.isLoading = true;
+      var url = `type=ITEMCODE&issueTo=&locationId=`;
+      DataService["a" /* default */].GetAssetTypeCustom(url).then(response => {
+        vm.AssetType = JSON.parse(response.data);
+        vm.isLoading = false;
+      });
+    },
+    handleClick() {
+      if (this.$refs.theCheckbox[0].checked) {
+        this.IsChecked = true;
+      } else {
+        this.IsChecked = false;
+      }
+    }
+  }
+});
+// CONCATENATED MODULE: ./src/components/Modal/ImportProduct.vue?vue&type=script&lang=js&
+ /* harmony default export */ var Modal_ImportProductvue_type_script_lang_js_ = (ImportProductvue_type_script_lang_js_); 
+// EXTERNAL MODULE: ./src/components/Modal/ImportProduct.vue?vue&type=style&index=0&id=741fe449&prod&scoped=true&lang=css&
+var ImportProductvue_type_style_index_0_id_741fe449_prod_scoped_true_lang_css_ = __webpack_require__("6023");
+
+// EXTERNAL MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
+var componentNormalizer = __webpack_require__("2877");
+
+// CONCATENATED MODULE: ./src/components/Modal/ImportProduct.vue
+
+
+
+
+
+
+/* normalize component */
+
+var component = Object(componentNormalizer["a" /* default */])(
+  Modal_ImportProductvue_type_script_lang_js_,
+  ImportProductvue_type_template_id_741fe449_scoped_true_render,
+  ImportProductvue_type_template_id_741fe449_scoped_true_staticRenderFns,
+  false,
+  null,
+  "741fe449",
+  null
+  
+)
+
+/* harmony default export */ var ImportProduct = (component.exports);
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--13-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader/lib??vue-loader-options!./src/views/AssetCatalog/ImportAssetItem.vue?vue&type=script&lang=js&
+
+
+
+/* harmony default export */ var ImportAssetItemvue_type_script_lang_js_ = ({
+  components: {
+    ImportProduct: ImportProduct
+  },
+  data: function () {
+    return {
+      isLoading: false,
+      file: null,
+      filepath: '',
+      excelFileName: null,
+      reqfrom: null,
+      expListing: null,
+      trips: [],
+      categories: [],
+      projects: [],
+      currencies: [],
+      tasks: [],
+      expLimitJsonBack: [],
+      check_EXPENSE_LIMIT: false,
+      userDateFormat: null,
+      files: new FormData(),
+      value: null,
+      attachmentName: '',
+      ShowImportProduct: false
+    };
+  },
+  methods: {
+    BackTolist: function () {
+      this.$router.push({
+        name: 'ProductListing'
+      });
+    },
+    onCancel: function () {
+      this.$router.push({
+        name: 'ProductListing'
+      });
+    },
+    setFile: function (e) {
+      this.attachmentName = e.target.files[0].name;
+      this.file = e.target.files[0];
+      this.excelFileName = e.target.files[0].name;
+    },
+    Clear: function () {
+      this.attachmentName = '';
+    },
+    UploadProductSampleFile() {
+      var vm = this;
+      vm.$emit('ImportProduct');
+      if ($("#flAvatar").val() != "") {
+        var file = $("#flAvatar").val().split('\\').pop();
+        var allowFileTypesExt = '.xls,.xlsx';
+        var extension = file.replace(/^.*\./, '');
+        if (!allowFileTypesExt.includes(extension)) {
+          vm.ShowAlert(vm.$t('InvalidSampleFileUploadMsg', [file, allowFileTypesExt]), "warning", true, vm.$t('Alert'));
+        } else {
+          vm.confirmR(vm.$t("bulkImportConfirmationMsg"), true, vm.$t("Delete") + "  " + vm.$t("REPORT_ID"), function () {
+            const formdata = new FormData();
+            formdata.append("file", vm.file);
+            vm.isLoading = true;
+            DataService["a" /* default */].ImportProductSamplePost(formdata).then(function (response) {
+              debugger;
+              vm.isLoading = false;
+              var data = response.data;
+              if (data.Status == 0) {
+                vm.filepath = data.Msg;
+                vm.ShowImportProduct = vm.filepath != '' ? true : false;
+              } else {
+                vm.ShowAlert(data.Msg, "warning", true, vm.$t("Alert"));
+              }
+            });
+            vm.isLoading = false;
+          });
+        }
+      } else {
+        vm.ShowAlert(vm.$t("PleaseUploadExcelFile"), "warning", true, vm.$t("Alert"));
+      }
+    }
+  }
+});
+// CONCATENATED MODULE: ./src/views/AssetCatalog/ImportAssetItem.vue?vue&type=script&lang=js&
+ /* harmony default export */ var AssetCatalog_ImportAssetItemvue_type_script_lang_js_ = (ImportAssetItemvue_type_script_lang_js_); 
+// CONCATENATED MODULE: ./src/views/AssetCatalog/ImportAssetItem.vue
+
+
+
+
+
+/* normalize component */
+
+var ImportAssetItem_component = Object(componentNormalizer["a" /* default */])(
+  AssetCatalog_ImportAssetItemvue_type_script_lang_js_,
+  render,
+  staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* harmony default export */ var ImportAssetItem = __webpack_exports__["default"] = (ImportAssetItem_component.exports);
+
+/***/ }),
+
+/***/ "6023":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_7_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_1_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ImportProduct_vue_vue_type_style_index_0_id_741fe449_prod_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("96a2");
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_7_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_1_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ImportProduct_vue_vue_type_style_index_0_id_741fe449_prod_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_7_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_1_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ImportProduct_vue_vue_type_style_index_0_id_741fe449_prod_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* unused harmony reexport * */
+
+
+/***/ }),
+
+/***/ "6c52":
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__("24fb");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".listing .table td.p-location[data-v-741fe449]:not(.overflow-visible):not(.mobile-action):not(.details-control){overflow:visible!important}", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "96a2":
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__("6c52");
+if(content.__esModule) content = content.default;
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = __webpack_require__("499e").default
+var update = add("a2741968", content, true, {"sourceMap":false,"shadowMode":false});
+
+/***/ })
+
+}]);
 //# sourceMappingURL=chunk-a41644bc.js.map
